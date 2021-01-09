@@ -1,3 +1,11 @@
 body * {
     border: 0.5px dotted red;
 }
+
+/* MISSION.html */
+.list-number {
+    list-style-type: decimal;
+}
+.list-latin-lower {
+    list-style-type: lower-alpha;
+}
