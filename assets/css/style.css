@@ -1,11 +1,27 @@
 body * {
     border: 0.5px dotted red;
 }
+/* last list item bottom margin (same as <p>'s)*/
+ol > li:last-child, 
+ul > li:last-child {
+    margin-bottom: 1rem;
+}
 
-/* MISSION.html */
+/* MISSION.html, CONSTITUTION.html */
 .list-number {
     list-style-type: decimal;
 }
 .list-latin-lower {
     list-style-type: lower-alpha;
+}
+.list-disc-solid {
+    list-style-type: disc;    
+}
+/* style the numbers of the <ol> */
+.list-with-header > li {
+    font-size: 1.5rem;    
+}
+/* then dial back for the child elements (except for the first one) */
+.list-with-header > li > *:not(:first-child) {
+    font-size: 1rem;
 }
