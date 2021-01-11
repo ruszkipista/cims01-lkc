@@ -1,6 +1,26 @@
 body * {
     border: 0.5px dotted red;
 }
+:root{
+    --nav-logo-width:  3rem;
+    --nav-logo-height: 3rem;
+}
+a.navbar-brand {
+    width: var(--nav-logo-width);
+    height: var(--nav-logo-height);
+    background: url(../img/logo-lkc-96x96.png) center center / cover no-repeat;
+}
+#nav-logo-aiklf {
+    width: var(--nav-logo-width);
+    height: var(--nav-logo-height);
+    background: url(../img/logo-aiklf.png) center center / cover no-repeat;
+}
+#nav-logo-iukl {
+    width: var(--nav-logo-width);
+    height: var(--nav-logo-height);
+    background: url(../img/logo-iukl.png) center center / cover no-repeat;
+}
+
 /* last list item bottom margin (same as <p>'s)*/
 ol > li:last-child, 
 ul > li:last-child {
