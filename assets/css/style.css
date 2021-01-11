@@ -8,6 +8,9 @@ body * {
 }
 
 /* NAVBAR */
+.navbar {
+    padding: 0;
+}
 #nav-logo-lkc {
     width: var(--nav-logo-width);
     height: var(--nav-logo-height);
@@ -23,17 +26,8 @@ body * {
     height: var(--nav-logo-height);
     background: url(../img/logo-iukl.png) center center / cover no-repeat;
 }
-.nav-btn-center {
-    line-height:2rem;
-}
 
 /* MISSION.html, CONSTITUTION.html */
-
-/* last list item bottom margin (same as <p>'s)*/
-ol > li:last-child, 
-ul > li:last-child {
-    margin-bottom: 1rem;
-}
 .list-number {
     list-style-type: decimal;
 }
