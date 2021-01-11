@@ -1,11 +1,14 @@
 body * {
     border: 0.5px dotted red;
 }
-:root{
+/* GLOBAL VARIABLES */
+:root {
     --nav-logo-width:  3rem;
     --nav-logo-height: 3rem;
 }
-a.navbar-brand {
+
+/* NAVBAR */
+#nav-logo-lkc {
     width: var(--nav-logo-width);
     height: var(--nav-logo-height);
     background: url(../img/logo-lkc-96x96.png) center center / cover no-repeat;
@@ -20,14 +23,17 @@ a.navbar-brand {
     height: var(--nav-logo-height);
     background: url(../img/logo-iukl.png) center center / cover no-repeat;
 }
+.nav-btn-center {
+    line-height:2rem;
+}
+
+/* MISSION.html, CONSTITUTION.html */
 
 /* last list item bottom margin (same as <p>'s)*/
 ol > li:last-child, 
 ul > li:last-child {
     margin-bottom: 1rem;
 }
-
-/* MISSION.html, CONSTITUTION.html */
 .list-number {
     list-style-type: decimal;
 }
@@ -35,7 +41,7 @@ ul > li:last-child {
     list-style-type: lower-alpha;
 }
 .list-disc-solid {
-    list-style-type: disc;    
+    list-style-type: disc;
 }
 /* style the numbers of the <ol> */
 .list-with-header > li {
