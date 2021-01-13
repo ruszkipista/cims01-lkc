@@ -5,7 +5,15 @@ body * {
 :root {
     --nav-logo-width:  3rem;
     --nav-logo-height: 3rem;
+    --color-light1:  #dffbfd;
+    --color-normal1: #e78701;
+    --color-normal2: #d31c13;
+    --color-normal3: #145ab6;
+    --color-dark1:   #1a143f;
+    --color-opaque1: #dffbfd9f;
 }
+/* GLOBAL STYLES */
+
 
 /* NAVBAR */
 .navbar {
@@ -25,6 +33,28 @@ body * {
     width: var(--nav-logo-width);
     height: var(--nav-logo-height);
     background: url(../img/logo-iukl.png) center center / cover no-repeat;
+}
+
+/* HOME - callout */
+.container-callout {
+    height: 90vh;
+    background: url(../img/background-callout.jpg) center center / cover no-repeat fixed;
+    padding: 10% 15%;
+    position: relative;
+}
+.layer-opaque {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-opaque1);
+}
+.text-callout {
+    font-weight: bold;
+    font-size: 5vmin;
+    line-height: 8vmin;
+    color: var(--color-dark1)
 }
 
 /* MISSION.html, CONSTITUTION.html */
