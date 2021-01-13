@@ -38,7 +38,7 @@ body * {
 /* HOME - callout */
 .container-callout {
     height: 90vh;
-    background: url(../img/background-callout.jpg) center center / cover no-repeat fixed;
+    background: url(../img/training-front.jpg) center center / cover no-repeat fixed;
     padding: 10% 15%;
     position: relative;
 }
@@ -58,15 +58,9 @@ body * {
 }
 
 /* MISSION.html, CONSTITUTION.html */
-.list-number {
-    list-style-type: decimal;
-}
-.list-latin-lower {
-    list-style-type: lower-alpha;
-}
-.list-disc-solid {
-    list-style-type: disc;
-}
+.list-number      { list-style-type: decimal;}
+.list-latin-lower { list-style-type: lower-alpha;}
+.list-disc-solid  { list-style-type: disc;}
 /* style the numbers of the <ol> */
 .list-with-header > li {
     font-size: 1.5rem;    
