@@ -1,6 +1,10 @@
 body * {
     border: 0.5px dotted red;
 }
+div, section, article, main, body {
+    margin:0;
+    padding:0;
+}
 /* GLOBAL VARIABLES */
 :root {
     --nav-logo-width:  3rem;
@@ -13,11 +17,33 @@ body * {
     --color-opaque1: #dffbfd9f;
 }
 /* GLOBAL STYLES */
-
+.text-color-light1 { color: var(--color-light1);}
+.text-color-normal1  { color: var(--color-normal1);}
+.text-color-normal2  { color: var(--color-normal2);}
+.text-color-normal3  { color: var(--color-normal3);}
+.text-color-dark1  { color: var(--color-dark1);}
+.bg-color-light1   { background-color: var(--color-light1);}
+.bg-color-normal1  { background-color: var(--color-normal1);}
+.bg-color-normal2  { background-color: var(--color-normal2);}
+.bg-color-normal3  { background-color: var(--color-normal3);}
+.bg-color-dark1    { background-color: var(--color-dark1);}
 
 /* NAVBAR */
-.navbar {
+.navbar-dark{
+    color: var(--color-light1);
+    background-color: var(--color-dark1);    
+}
+.btn-outline-primary {
+    color: var(--color-dark1);
+    background-color: var(--color-light1);
+}
+.btn-outline-primary:hover {
+    color: var(--color-light1);
+    background-color: var(--color-dark1);
+}
+nav.navbar {
     padding: 0;
+    /* background-color: var(--color-dark1); */
 }
 #nav-logo-lkc {
     width: var(--nav-logo-width);
