@@ -81,6 +81,15 @@ nav.navbar {
     color: var(--color-dark1)
 }
 
+/* FOOTER */
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+footer svg {
+    height:1.5rem;
+}
+
 /* MISSION.html, CONSTITUTION.html */
 .list-number      { list-style-type: decimal;}
 .list-latin-lower { list-style-type: lower-alpha;}
