@@ -41,10 +41,6 @@ html, body, main, nav, div, section, article, main, body {
     color: var(--color-light1);
     background-color: var(--color-dark1);
 }
-nav.navbar {
-    padding: 0;
-    /* background-color: var(--color-dark1); */
-}
 #nav-logo-lkc {
     width: var(--nav-logo-width);
     height: var(--nav-logo-height);
@@ -60,10 +56,13 @@ nav.navbar {
     height: var(--nav-logo-height);
     background: url(../img/logo-iukl.png) center center / cover no-repeat;
 }
+@media (min-width: 355px) {
+    nav .d-sm-inline { display: inline!important;}
+}
 
 /* HOME - callout */
 .hero {
-    height: 95vh;
+    height: 92vh;
     background: url(../img/training-front.jpg) center center / cover no-repeat;
     margin-top: 3rem;
     padding: 0 10%;
@@ -81,8 +80,11 @@ div.layer-opaque {
     background-color: var(--color-opaque1);
     z-index: -1;
 }
-.height-third {
-    height: 33%;
+.height-outer {
+    height: 45%;
+}
+.height-middle {
+    height: 10%;
 }
 .hero h1 {
     text-align: center;
