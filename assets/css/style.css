@@ -65,7 +65,7 @@ nav.navbar {
 .container-callout {
     height: 90vh;
     background: url(../img/training-front.jpg) center center / cover no-repeat fixed;
-    padding: 10% 15%;
+    padding: 10% 10%;
     position: relative;
 }
 .layer-opaque {
@@ -78,8 +78,6 @@ nav.navbar {
 }
 .text-callout {
     font-weight: bold;
-    font-size: 5vmin;
-    line-height: 8vmin;
     color: var(--color-dark1)
 }
 
