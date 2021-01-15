@@ -59,7 +59,7 @@ html, body, main, nav, div, section, article, img {
     nav .d-sm-inline { display: inline!important;}
 }
 
-/* HOME - callout */
+/* HOME - HERO section */
 .hero {
     height: 92vh;
     margin-top: 3rem;
