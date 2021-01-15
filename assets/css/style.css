@@ -40,21 +40,21 @@ html, body, main, nav, div, section, article, img {
     color: var(--color-light1);
     background-color: var(--color-dark1);
 }
-#nav-logo-lkc {
+.nav-logo {
     width: var(--nav-logo-width);
     height: var(--nav-logo-height);
+}
+#logo-lkc {
     background: url(../img/logo-lkc-96x96.png) center center / cover no-repeat;
 }
-#nav-logo-aiklf {
-    width: var(--nav-logo-width);
-    height: var(--nav-logo-height);
+#logo-aiklf {
     background: url(../img/logo-aiklf.png) center center / cover no-repeat;
 }
-#nav-logo-iukl {
-    width: var(--nav-logo-width);
-    height: var(--nav-logo-height);
+#logo-iukl {
     background: url(../img/logo-iukl.png) center center / cover no-repeat;
 }
+/* The following media query makes the title "Limerick Kettlebell Club" in Navbar to appear 
+   on smaller devices. The BootStrap responsive break for "sm" is too far away, there is no "xs". */
 @media (min-width: 355px) {
     nav .d-sm-inline { display: inline!important;}
 }
@@ -67,7 +67,7 @@ html, body, main, nav, div, section, article, img {
     position: relative;
     color: var(--color-dark1);
 }
-/* took backround opacity from here (method 2): 
+/* borrowed backround opacity from here (method 2): 
 https://www.digitalocean.com/community/tutorials/how-to-change-a-css-background-images-opacity */
 .hero:before {
     content: ' ';
@@ -82,13 +82,17 @@ https://www.digitalocean.com/community/tutorials/how-to-change-a-css-background-
     background-color: var(--color-light1);
     z-index: -1;
 }
-.height-outer {
-    height: 45%;
+.height-top {
+    height: 35%;
 }
 .height-middle {
     height: 10%;
 }
-.hero h1 {
+.height-bottom {
+    height: 55%;
+}
+.hero h1,
+.hero h2 {
     font-weight: bold;
 }
 
@@ -105,6 +109,16 @@ footer a {
 }
 footer svg {
     height:1.5rem;
+}
+
+/* ABOUT */
+.key {
+    font-weight: bold;
+}
+.value {
+    word-break: normal;
+    padding-bottom: 1rem;
+    padding-left: 0;
 }
 
 /* MISSION.html, CONSTITUTION.html */
