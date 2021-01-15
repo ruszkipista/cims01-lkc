@@ -1,7 +1,7 @@
 body * {
     border: 0.5px dotted red;
 }
-html, body, main, nav, div, section, article, main, body {
+html, body, main, nav, div, section, article, img {
     margin:0;
     padding:0;
 }
