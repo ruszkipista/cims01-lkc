@@ -1,6 +1,5 @@
-body * {
-    border: 0.5px dotted red;
-}
+/* body * { border: 0.5px dotted red;} */
+
 html, body, main, nav, div, section, article, img {
     margin:0;
     padding:0;
@@ -119,6 +118,10 @@ footer svg {
     word-break: normal;
     padding-bottom: 1rem;
     padding-left: 0;
+}
+#img-venue {
+    /* the following image was taken from https://www.deltasportsdome.com/wp-content/uploads/2019/12/Delta-Sidebar-Portrait.jpg */
+    background: url(../img/delta-entrance.jpg) center center / cover no-repeat;;
 }
 
 /* MISSION.html, CONSTITUTION.html */
