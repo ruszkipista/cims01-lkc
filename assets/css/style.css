@@ -101,9 +101,13 @@ html, body, main, nav, div, section, article, img {
 /* HOME - Main section */
 .section-separator1 {
    height: 2rem;
-   background: url("../img/competition-kettlebell-lineup-small.png") center center / contain no-repeat;
+   background: url("../img/competition-kettlebell-lineup-small1.png") center center / contain no-repeat;
 }
-.gmap {
+.section-separator2 {
+    height: 2rem;
+    background: url("../img/competition-kettlebell-lineup-small2.png") center center / contain no-repeat;
+ }
+ .gmap {
     width:100%;
     height: 280px;
     border: none;
