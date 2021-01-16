@@ -1,4 +1,4 @@
-/* body * { border: 0.5px dotted red;} */
+body * { border: 0.5px dotted red;}
 
 html, body, main, nav, div, section, article, img {
     margin:0;
@@ -15,16 +15,16 @@ html, body, main, nav, div, section, article, img {
     --color-dark1:   #1a143f;
 }
 /* GLOBAL STYLES */
-.text-color-light1 { color: var(--color-light1);}
-.text-color-normal1  { color: var(--color-normal1);}
-.text-color-normal2  { color: var(--color-normal2);}
-.text-color-normal3  { color: var(--color-normal3);}
-.text-color-dark1  { color: var(--color-dark1);}
-.bg-color-light1   { background-color: var(--color-light1);}
-.bg-color-normal1  { background-color: var(--color-normal1);}
-.bg-color-normal2  { background-color: var(--color-normal2);}
-.bg-color-normal3  { background-color: var(--color-normal3);}
-.bg-color-dark1    { background-color: var(--color-dark1);}
+.text-color-light1  { color: var(--color-light1);}
+.text-color-normal1 { color: var(--color-normal1);}
+.text-color-normal2 { color: var(--color-normal2);}
+.text-color-normal3 { color: var(--color-normal3);}
+.text-color-dark1   { color: var(--color-dark1);}
+.bg-color-light1  { background-color: var(--color-light1);}
+.bg-color-normal1 { background-color: var(--color-normal1);}
+.bg-color-normal2 { background-color: var(--color-normal2);}
+.bg-color-normal3 { background-color: var(--color-normal3);}
+.bg-color-dark1   { background-color: var(--color-dark1);}
 
 /* NAVBAR */
 .navbar-dark{
@@ -44,12 +44,15 @@ html, body, main, nav, div, section, article, img {
     height: var(--nav-logo-height);
 }
 #logo-lkc {
+    /* Logo from LKC's facebook page https://www.facebook.com/Limerick-Kettlebell-Club-201978196542853  */
     background: url(../img/logo-lkc-96x96.png) center center / cover no-repeat;
 }
 #logo-aiklf {
+    /* Logo from http://www.aiklf.com/ */
     background: url(../img/logo-aiklf.png) center center / cover no-repeat;
 }
 #logo-iukl {
+    /* Logo from http://www.giri-iukl.com/en/ */
     background: url(../img/logo-iukl.png) center center / cover no-repeat;
 }
 /* The following media query makes the title "Limerick Kettlebell Club" in Navbar to appear 
@@ -66,8 +69,7 @@ html, body, main, nav, div, section, article, img {
     position: relative;
     color: var(--color-dark1);
 }
-/* borrowed backround opacity from here (method 2): 
-https://www.digitalocean.com/community/tutorials/how-to-change-a-css-background-images-opacity */
+/* borrowed backround opacity from here (method 2): https://www.digitalocean.com/community/tutorials/how-to-change-a-css-background-images-opacity */
 .hero:before {
     content: ' ';
     width: 100%;
@@ -76,18 +78,19 @@ https://www.digitalocean.com/community/tutorials/how-to-change-a-css-background-
     top: 0;
     left: 0;
     padding: 0;
+    /* picture from LKC's facebook page https://www.facebook.com/Limerick-Kettlebell-Club-201978196542853  */
     background: url(../img/training-front.jpg) center center / cover no-repeat;
     opacity: 0.4;
     background-color: var(--color-light1);
     z-index: -1;
 }
-.height-top {
+.hero-height-top {
     height: 35%;
 }
-.height-middle {
+.hero-height-middle {
     height: 10%;
 }
-.height-bottom {
+.hero-height-bottom {
     height: 55%;
 }
 .hero h1,
@@ -95,6 +98,11 @@ https://www.digitalocean.com/community/tutorials/how-to-change-a-css-background-
     font-weight: bold;
 }
 
+/* HOME - Main section */
+.section-separator1 {
+   height: 2rem;
+   background: url("../img/competition-kettlebell-lineup-small.png") center center / contain no-repeat;
+}
 .gmap {
     width:100%;
     height: 280px;
@@ -120,7 +128,7 @@ footer svg {
     padding-left: 0;
 }
 #img-venue {
-    /* the following image was taken from https://www.deltasportsdome.com/wp-content/uploads/2019/12/Delta-Sidebar-Portrait.jpg */
+    /* picture from https://www.deltasportsdome.com/wp-content/uploads/2019/12/Delta-Sidebar-Portrait.jpg */
     background: url(../img/delta-entrance.jpg) center center / cover no-repeat;;
 }
 
