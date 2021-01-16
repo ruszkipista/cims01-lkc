@@ -1,4 +1,4 @@
-body * { border: 0.5px dotted red;}
+/* body * { border: 0.5px dotted red;} */
 
 html, body, main, nav, div, section, article, img {
     margin:0;
@@ -102,11 +102,13 @@ html, body, main, nav, div, section, article, img {
 .section-separator1 {
    height: 2rem;
    background: url("../img/competition-kettlebell-lineup-small1.png") center center / contain no-repeat;
+   background-color: var(--color-light1);
 }
 .section-separator2 {
     height: 2rem;
     background: url("../img/competition-kettlebell-lineup-small2.png") center center / contain no-repeat;
- }
+    background-color: var(--color-light1);
+}
  .gmap {
     width:100%;
     height: 280px;
