@@ -1,4 +1,4 @@
-/* body * { border: 0.5px dotted red;} */
+body * { border: 0.5px dotted red;}
 
 html, body, main, nav, div, section, article, img {
     margin:0;
@@ -114,6 +114,8 @@ html, body, main, nav, div, section, article, img {
     height: 280px;
     border: none;
 }
+.box-decoration-08kg { border-left: 5px solid pink;}
+
 
 /* FOOTER */
 footer a {
