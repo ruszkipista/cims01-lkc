@@ -110,17 +110,20 @@ html, body, main, nav, div, section, article, img {
     height: 280px;
     border: none;
 }
-.box-decoration-08kg { border-left: 6px solid pink;}
-.box-decoration-12kg { border-left: 6px solid blue;}
-.box-decoration-16kg { border-left: 6px solid yellow;}
-.box-decoration-20kg { border-left: 6px solid purple;}
-.box-decoration-24kg { border-left: 6px solid green;}
-.box-decoration-28kg { border-left: 6px solid orange;}
-.box-decoration-32kg { border-left: 6px solid red;}
-.box-decoration-36kg { border-left: 6px solid grey;}
-.box-decoration-40kg { border-left: 6px solid white;}
-.box-decoration-44kg { border-left: 6px solid silver;}
-.box-decoration-48kg { border-left: 6px solid gold;}
+.border-left-08kg { border-left: 6px solid pink;}
+.border-left-12kg { border-left: 6px solid blue;}
+.border-left-16kg { border-left: 6px solid yellow;}
+.border-left-20kg { border-left: 6px solid purple;}
+.border-left-24kg { border-left: 6px solid green;}
+.border-left-28kg { border-left: 6px solid orange;}
+.border-left-32kg { border-left: 6px solid red;}
+.border-left-36kg { border-left: 6px solid grey;}
+.border-left-40kg { border-left: 6px solid white;}
+.border-left-44kg { border-left: 6px solid silver;}
+.border-left-48kg { border-left: 6px solid gold;}
+
+.border-bottom-08kg { border-bottom: 6px solid pink;}
+.border-bottom-12kg { border-bottom: 6px solid blue;}
 
 /* FOOTER */
 footer a {
