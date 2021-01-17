@@ -1,4 +1,4 @@
-body * { border: 0.5px dotted red;}
+/* body * { border: 0.5px dotted red;} */
 
 html, body, main, nav, div, section, article, img {
     margin:0;
@@ -93,10 +93,6 @@ html, body, main, nav, div, section, article, img {
 .hero-height-bottom {
     height: 55%;
 }
-.hero h1,
-.hero h2 {
-    font-weight: bold;
-}
 
 /* HOME - Main section */
 .section-separator1 {
@@ -114,8 +110,17 @@ html, body, main, nav, div, section, article, img {
     height: 280px;
     border: none;
 }
-.box-decoration-08kg { border-left: 5px solid pink;}
-
+.box-decoration-08kg { border-left: 6px solid pink;}
+.box-decoration-12kg { border-left: 6px solid blue;}
+.box-decoration-16kg { border-left: 6px solid yellow;}
+.box-decoration-20kg { border-left: 6px solid purple;}
+.box-decoration-24kg { border-left: 6px solid green;}
+.box-decoration-28kg { border-left: 6px solid orange;}
+.box-decoration-32kg { border-left: 6px solid red;}
+.box-decoration-36kg { border-left: 6px solid grey;}
+.box-decoration-40kg { border-left: 6px solid white;}
+.box-decoration-44kg { border-left: 6px solid silver;}
+.box-decoration-48kg { border-left: 6px solid gold;}
 
 /* FOOTER */
 footer a {
