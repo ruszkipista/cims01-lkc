@@ -1,4 +1,4 @@
-/* body * { border: 0.5px dotted red;} */
+body * { border: 0.5px dotted red;}
 
 html, body, main, nav, div, section, article, img {
     margin:0;
@@ -25,6 +25,10 @@ html, body, main, nav, div, section, article, img {
 .bg-color-normal2 { background-color: var(--color-normal2);}
 .bg-color-normal3 { background-color: var(--color-normal3);}
 .bg-color-dark1   { background-color: var(--color-dark1);}
+.bg-color-48kg    { background-color: gold;}
+.bg-color-44kg    { background-color: silver;}
+.bg-color-16kg    { background-color: yellow;}
+.bg-color-20kg    { background-color: purple;}
 
 /* NAVBAR */
 .navbar-dark{
