@@ -140,7 +140,7 @@ html, body, main, nav, div, section, article, img {
 .border-left-24kg { border-left: 6px solid green;}
 .border-left-28kg { border-left: 6px solid orange;}
 .border-left-32kg { border-left: 6px solid red;}
-.border-left-36kg { border-left: 6px solid grey;}
+.border-left-36kg { border-left: 6px solid black;}
 .border-left-40kg { border-left: 6px solid white;}
 .border-left-44kg { border-left: 6px solid silver;}
 .border-left-48kg { border-left: 6px solid gold;}
@@ -152,7 +152,7 @@ html, body, main, nav, div, section, article, img {
 .border-bottom-24kg { border-bottom: 6px solid green;}
 .border-bottom-28kg { border-bottom: 6px solid orange;}
 .border-bottom-32kg { border-bottom: 6px solid red;}
-.border-bottom-36kg { border-bottom: 6px solid grey;}
+.border-bottom-36kg { border-bottom: 6px solid black;}
 .border-bottom-40kg { border-bottom: 6px solid white;}
 .border-bottom-44kg { border-bottom: 6px solid silver;}
 .border-bottom-48kg { border-bottom: 6px solid gold;}
