@@ -130,8 +130,9 @@ html, body, main, nav, div, section, article, img {
     /* animation-fill-mode: initial; */
 }
 @keyframes separator-zoom{
-    from { background-position: 35%, 38%, 41%, 44%, 47%, 50%, 53%, 56%, 59%,  62%, 65%;}
-    to   { background-position: 5%, 14%, 23%, 32%, 41%, 50%, 59%, 68%, 77%,  86%, 95%;}
+      0%  { background-position: 35%, 38%, 41%, 44%, 47%, 50%, 53%, 56%, 59%,  62%, 65%;}
+     50%  { background-position:  5%, 14%, 23%, 32%, 41%, 50%, 59%, 68%, 77%,  86%, 95%;}
+    100%  { background-position: 35%, 38%, 41%, 44%, 47%, 50%, 53%, 56%, 59%,  62%, 65%;}
 }
 
  .gmap {
