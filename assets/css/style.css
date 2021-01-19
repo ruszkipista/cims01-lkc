@@ -54,11 +54,11 @@ html, body, main, nav, div, section, article, img {
 }
 #logo-aiklf {
     /* Logo from http://www.aiklf.com/ */
-    background: url(../img/logo-aiklf.png) center center / cover no-repeat;
+    background: url(../img/logo-aiklf.png) center center / contain no-repeat;
 }
 #logo-iukl {
     /* Logo from http://www.giri-iukl.com/en/ */
-    background: url(../img/logo-iukl.png) center center / cover no-repeat;
+    background: url(../img/logo-iukl.png) center center / contain no-repeat;
 }
 /* The following media query makes the title "Limerick Kettlebell Club" in Navbar to appear 
    on smaller devices. The BootStrap responsive break for "sm" is too far away, there is no "xs". */
