@@ -100,8 +100,7 @@ html, body, main, nav, div, section, article, img {
 
 /* HOME - Main section */
 .section-separator {
-    height: 1rem;
-    padding: 1rem 0;
+    height: 1.5rem;
     margin: 0;
     background-color: var(--color-light1);
     background-image: url(../img/competition-kettlebell-08kg.webp),
@@ -119,6 +118,16 @@ html, body, main, nav, div, section, article, img {
     background-size: contain;
     background-repeat: no-repeat;
 }
+.section-separator:hover {
+    animation-name: separator-zoom;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes separator-zoom{
+    from{ background-position: 35%, 38%, 41%, 44%, 47%, 50%, 53%, 56%, 59%,  62%, 65%;}
+    to  { background-position: 5%, 14%, 23%, 32%, 41%, 50%, 59%, 68%, 77%,  86%, 95%;}
+}
+
  .gmap {
     width:100%;
     height: 280px;
