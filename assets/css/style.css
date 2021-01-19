@@ -107,6 +107,7 @@ html, body, main, nav, div, section, article, img {
 .section-separator {
     height: 1.5rem;
     margin: 0;
+    padding: 2rem;
     background-color: var(--color-light1);
     background-image: url(../img/competition-kettlebell-08kg.webp),
                       url(../img/competition-kettlebell-12kg.webp),
@@ -120,7 +121,7 @@ html, body, main, nav, div, section, article, img {
                       url(../img/competition-kettlebell-44kg.webp),
                       url(../img/competition-kettlebell-48kg.webp);
     background-position: 35%, 38%, 41%, 44%, 47%, 50%, 53%, 56%, 59%,  62%, 65%;
-    background-size: contain;
+    background-size: 1.5rem;
     background-repeat: no-repeat;
 }
 .section-separator:hover {
