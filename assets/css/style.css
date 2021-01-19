@@ -1,4 +1,4 @@
-body * { border: 0.5px dotted red;}
+/* body * { border: 0.5px dotted red;} */
 
 html, body, main, nav, div, section, article, img {
     margin:0;
@@ -68,6 +68,7 @@ html, body, main, nav, div, section, article, img {
 /* HOME - HERO section */
 .hero {
     height: 92vh;
+    max-height: 92vh;
     margin-top: 3rem;
     padding: 0 10%;
     position: relative;
@@ -122,6 +123,7 @@ html, body, main, nav, div, section, article, img {
     animation-name: separator-zoom;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
+    /* animation-fill-mode: initial; */
 }
 @keyframes separator-zoom{
     from { background-position: 35%, 38%, 41%, 44%, 47%, 50%, 53%, 56%, 59%,  62%, 65%;}
