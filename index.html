@@ -16,7 +16,7 @@
     <script>
       // The following calculation is needed to determine the "real" VH (Vieport Height)
       // for mobile device browsers, see issue here: https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
-      function setRealVieportHeight(){
+      function setRealVieportHeightVariable(){
         let vh = window.innerHeight * 0.01;
         // set the value in the --vh custom property to the root of the document
         document.documentElement.style.setProperty('--vh', `${vh}px`);
