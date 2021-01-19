@@ -70,7 +70,7 @@ html, body, main, nav, div, section, article, img {
 .hero {
     height: 89vh;
     height: calc(var(--vh) * 89);
-    min-height: 480px;
+    min-height: 27rem;
     margin-top: 3rem;
     padding: 0 10%;
     position: relative;
