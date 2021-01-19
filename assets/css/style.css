@@ -4,6 +4,16 @@ html, body, main, nav, div, section, article, img {
     margin:0;
     padding:0;
 }
+
+body {
+    min-height: 100vh;
+    /* mobile viewport bug fix */
+    min-height: -webkit-fill-available;
+  }
+html {
+    height: -webkit-fill-available;
+}
+
 /* GLOBAL VARIABLES */
 :root {
     --nav-logo-width:  3rem;
