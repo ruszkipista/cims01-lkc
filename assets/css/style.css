@@ -76,7 +76,7 @@ body {
 /* HOME - HERO section */
 .hero {
     height: 89vh;
-    height: var(-webkit-fill-available * 0.89);
+    height: calc(var(-webkit-fill-available) * 0.89);
     margin-top: 3rem;
     padding: 0 10%;
     position: relative;
