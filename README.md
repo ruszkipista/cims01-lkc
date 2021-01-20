@@ -2,10 +2,44 @@
 
 Static website to promote the [Limerick Kettlebell Club](https://www.facebook.com/Limerick-Kettlebell-Club-201978196542853) and [Kettlebell Sport](https://en.wikipedia.org/wiki/Kettlebell_lifting) around Limerick city, Ireland. This project is the first milestone in obtaining a [Full Stack Web Development](https://codeinstitute.net/full-stack-software-development-diploma/) diploma from [Code Institute](https://codeinstitute.net/)
 
-![the webpage on different devices](./assets/doc/responsive-am-i.png "the webpage on different devices")
+![the webpage on different devices](./assets/doc/responsive-am-i.png "the webpage on different size devices")
 
 ## UX
- 
+### Strategy Plane
+Stakeholders of the website:
+- visitor - a person visiting the website, not a club member
+- member - club member, who actively trains or trained with the club
+- officer - affiliated with the club who executes or organises club matters though official capacity
+- AIKLF - sport organization which the club is associated with
+
+#### Goals and Objectives of Stakeholders (users)
+|G#|User|Goals, Needs, Objectives|
+|--|----|------------------------|
+|G1|AIKLF|member organizations feature their affiliation with national (AIKLF) and world organization (IUKL) in info materials|
+|G2|officer|provide adequate, easy access training facilities with certified instructors at fair price in popular day/week times|
+|G3|officer|increase number of active members by attracting new members and retaining current members|
+|G4|officer|organise workshops for the public and other gym trainers|
+|G5|officer|promote the club via members’ social networks|
+|G6|officer|make available club documents, rules, photos and forms|
+|G7|officer|present an attractive image of the club to the public|
+|G8|officer|inform about out of ordinary events (e.g. competition results, upcoming events, closure, etc.)|
+|G9|officer|send out low cost instant delivery periodicals and notifications to individuals who signed up for it|
+|G10|officer|facilitate calendar where members can sign up to events or cancel the same|
+|G11|officer|inform about the history of Kettlebell and Kettlebell Sport|
+|G12|visitor|find training community which caters for my particulars and interests (gender, age, experience level, dedication to training)|
+|G13|visitor|learn about training related questions of what, why, how, who, when, where|
+|G14|visitor|learn about venue facilities: reception, change room, locker, parking, price, discount|
+|G15|visitor|learn about tools used for training|
+|G16|visitor|learn what to expect on the first training|
+|G17|officer|make available template training plans|
+|G18|member|our heroes: get information about club related competition results|
+|G19|officer|increase our authority on the subject in the eyes of the visitors|
+
+### Scope plane
+
+
+
+
 Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
 In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
