@@ -16,9 +16,52 @@
 </head>
 
 <body class="container">
-    <div class="row">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-dark p-0 fixed-top">
+        <div class="container-fluid p-2 m-0">
+          <a class="navbar-brand nav-logo mx-0 p-0" id="logo-lkc" href="index.html"></a>
+          <a class="navbar-brand mx-2 d-none d-sm-inline" href="index.html">Limerick Kettlebell Club</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Collapsable part -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+              <!-- Home -->
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <!-- Contact -->
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./about.html#contact">Contact</a>
+              </li>
+              <!-- About -->
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+              <!-- Documents -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Documents
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./safety.html">Safety 101</a></li>
+                  <li><a class="dropdown-item" href="./mission.html">Mission Statement</a></li>
+                  <li><a class="dropdown-item" href="./constitution.html">Constitution</a></li>
+                  <li><a class="dropdown-item" href="./assets/doc/fitness-health-assessment.pdf" target="_blank">Self Assessment</a></li>
+                </ul>
+              </li>
+            </ul>
+            <a class="btn btn-outline-primary mx-auto" href="./tryout.html">Try Out</a>
+            <a id="logo-aiklf" class="nav-logo float-end" href="./about.html#aiklf"></a>
+            <a id="logo-iukl"  class="nav-logo float-end" href="./about.html#iukl"></a>
+          </div>
+        </div>
+    </nav>
+
+    <main class="row nav-make-room">
         <article class="col-12 offset-md-2 col-md-8">
-            <h1 class="border-bottom-48kg text-center">Know this before your first training</h1>
+            <h1 class="border-bottom-48kg pt-3 text-center">Know this before your first training</h1>
             <p>Welcome! You made the first step to meet us. Below we collected all information which will help you to prepare for your first session with LKC.</p>
             <p>The below information is not the usual T&C, it is your best interest to read it.</p>
             <ul class="list-with-header">
@@ -84,7 +127,7 @@
 
             </ul>
         </article>
-    </div>
+    </main>
 
     <!-- Bootstrap JavaScript component -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
