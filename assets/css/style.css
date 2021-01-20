@@ -94,13 +94,13 @@ html, body, main, nav, div, section, article, img {
     z-index: -1;
 }
 .hero-height-top {
-    height: 35%;
+    height: 40%;
 }
 .hero-height-middle {
     height: 10%;
 }
 .hero-height-bottom {
-    height: 55%;
+    height: 50%;
 }
 .hero-height-top > h1,
 .hero-height-bottom > h2 {
