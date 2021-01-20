@@ -102,6 +102,10 @@ html, body, main, nav, div, section, article, img {
 .hero-height-bottom {
     height: 55%;
 }
+.hero-height-top > h1,
+.hero-height-bottom > h2 {
+    max-width: 600px;
+}
 
 /* HOME - Main section */
 .section-separator {
