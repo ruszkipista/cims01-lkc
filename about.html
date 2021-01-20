@@ -16,14 +16,58 @@
 </head>
 
 <body class="container-fluid">
-    <header>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-dark p-0 fixed-top">
+        <div class="container-fluid p-2 m-0">
+          <a class="navbar-brand nav-logo mx-0 p-0" id="logo-lkc" href="index.html"></a>
+          <a class="navbar-brand mx-2 d-none d-sm-inline" href="index.html">Limerick Kettlebell Club</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Collapsable part -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+              <!-- Home -->
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <!-- Contact -->
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./about.html#contact">Contact</a>
+              </li>
+              <!-- About -->
+              <li class="nav-item">
+                <a class="nav-link active" href="./about.html">About</a>
+              </li>
+              <!-- Documents -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Documents
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./safety.html">Safety 101</a></li>
+                  <li><a class="dropdown-item" href="./mission.html">Mission Statement</a></li>
+                  <li><a class="dropdown-item" href="./constitution.html">Constitution</a></li>
+                  <li><a class="dropdown-item" href="./assets/doc/fitness-health-assessment.pdf" target="_blank">Self Assessment</a></li>
+                </ul>
+              </li>
+            </ul>
+            <a class="btn btn-outline-primary mx-auto" href="./tryout.html">Try Out</a>
+            <a id="logo-aiklf" class="nav-logo float-end" href="./about.html#aiklf"></a>
+            <a id="logo-iukl"  class="nav-logo float-end" href="./about.html#iukl"></a>
+          </div>
+        </div>
+    </nav>
+   
+    <header class="nav-make-room">
         <h1 class="col-12 text-center">About LKC and kettlebell training</h1>
     </header>
 
     <!-- ARTICLES - all kettlebell pictures are from www.kettlebellkings.com/competition-kettlebell/ or www.d8fitness.com/store --> 
     <main class="row">
         <!-- What section - content sourced from https://breakingmuscle.co.uk/uk/fitness/kettlebell-sport-what-it-is-and-how-to-get-started-2 -->
-        <div id="what" class="row offset-lg-2 col-lg-8 p-0">
+        <a class="nav-anchor-negative" name="what"></a>
+        <div class="row offset-lg-2 col-lg-8 p-0">
             <div class="d-none d-sm-block col-sm-1 p-0 m-0">
                 <img class="img-fluid p-1" src="./assets/img/competition-kettlebell-08kg.webp" title="Pink 8kg" alt="Competition kettlebell 8kg">
             </div>
@@ -57,7 +101,8 @@
         </div>
 
         <!-- How section - content sourced from https://breakingmuscle.co.uk/uk/fitness/kettlebell-sport-what-it-is-and-how-to-get-started-2 -->
-        <div id="how" class="row offset-lg-2 col-lg-8 p-0">
+        <a class="nav-anchor-negative" name="how"></a>
+        <div class="row offset-lg-2 col-lg-8 p-0">
             <div class="d-none d-sm-block col-sm-1 p-0 m-0">
                 <img class="img-fluid p-1" src="./assets/img/competition-kettlebell-12kg.webp" title="Blue 12kg" alt="Competition kettlebell 12kg">
             </div>
@@ -70,7 +115,8 @@
         </div>
 
         <!-- Why - content is sourced from article www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/exercise/art-20048389 -->
-        <div id="why" class="row offset-lg-2 col-lg-8 p-0">
+        <a class="nav-anchor-negative" name="why"></a>
+        <div class="row offset-lg-2 col-lg-8 p-0">
             <div class="d-none d-sm-block col-sm-1 p-0 m-0">
                 <img class="img-fluid p-1" src="./assets/img/competition-kettlebell-24kg.webp" title="Green 24kg" alt="Competition kettlebell 24kg">
             </div>
@@ -93,7 +139,8 @@
         </div>
 
         <!-- Size - content is sourced from https://www.kettlebellkings.com/competition-kettlebell/ -->
-        <div id="size" class="row offset-lg-2 col-lg-8 p-0">
+        <a class="nav-anchor-negative" name="size"></a>
+        <div class="row offset-lg-2 col-lg-8 p-0">
             <div class="d-none d-sm-block col-sm-1 p-0 m-0">
                 <img class="img-fluid p-1" src="./assets/img/competition-kettlebell-16kg.webp" title="Yellow 16kg" alt="Competition kettlebell 16kg">
             </div>
@@ -110,7 +157,8 @@
         </div>
 
         <!-- Color - content is sourced from https://www.kettlebellkings.com/blog/kettlebell-color-coding-what-do-the-colors-mean/ -->
-        <div id="color" class="row offset-lg-2 col-lg-8 p-0">
+        <a class="nav-anchor-negative" name="color"></a>
+        <div class="row offset-lg-2 col-lg-8 p-0">
             <div class="d-none d-sm-block col-sm-1 p-0 m-0">
                 <img class="img-fluid p-1" src="./assets/img/competition-kettlebell-20kg.webp" title="Purple 20kg" alt="Competition kettlebell 20kg">
             </div>
@@ -144,7 +192,8 @@
         </div>
         
         <!-- Who -->
-        <div id="who" class="row offset-lg-2 col-lg-8 p-0">
+        <a class="nav-anchor-negative" name="who"></a>
+        <div class="row offset-lg-2 col-lg-8 p-0">
             <div class="d-none d-sm-block col-sm-1 p-0 m-0">
                 <img class="img-fluid p-1" src="./assets/img/competition-kettlebell-28kg.webp" title="Orange 28kg" alt="Competition kettlebell 28kg">
             </div>
@@ -177,7 +226,8 @@
         </div>
 
         <!-- When -->
-        <div id="when" class="row offset-lg-2 col-lg-8 p-0">
+        <a class="nav-anchor-negative" name="when"></a>
+        <div class="row offset-lg-2 col-lg-8 p-0">
             <div class="d-none d-sm-block col-sm-1 p-0 m-0">
                 <img class="img-fluid p-1" src="./assets/img/competition-kettlebell-32kg.webp" title="Red 32kg" alt="Competition kettlebell 32kg">
             </div>
@@ -192,7 +242,8 @@
         </div>
 
         <!-- Fee -->
-        <div id="fee" class="row offset-lg-2 col-lg-8 p-0">
+        <a class="nav-anchor-negative" name="fee"></a>
+        <div class="row offset-lg-2 col-lg-8 p-0">
             <div class="d-none d-sm-block col-sm-1 p-0 m-0">
                 <img class="img-fluid p-1" src="./assets/img/competition-kettlebell-36kg.webp" title="Grey 36kg" alt="Competition kettlebell 36kg">
             </div>
@@ -204,7 +255,8 @@
         </div>
 
         <!-- Contact -->
-        <div id="contact" class="row offset-lg-2 col-lg-8 p-0">
+        <a class="nav-anchor-negative" name="contact"></a>
+        <div class="row offset-lg-2 col-lg-8 p-0">
             <div class="d-none d-sm-block col-sm-1 p-0 m-0">
                 <img class="img-fluid p-1" src="./assets/img/competition-kettlebell-44kg.webp" title="Silver 44kg" alt="Competition kettlebell 44kg">
             </div>
@@ -222,7 +274,8 @@
         </div>
 
         <!-- Where - content is sourced from www.deltasportsdome.com -->
-        <div id="where" class="row offset-lg-2 col-lg-8 p-0">
+        <a class="nav-anchor-negative" name="where"></a>
+        <div class="row offset-lg-2 col-lg-8 p-0">
             <div class="d-none d-sm-block col-sm-1 p-0 m-0">
                 <img class="img-fluid p-1" src="./assets/img/competition-kettlebell-48kg.webp" title="Gold 48kg" alt="Competition kettlebell 48kg">
             </div>

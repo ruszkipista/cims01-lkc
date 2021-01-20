@@ -67,13 +67,19 @@ html, body, main, nav, div, section, article, img {
 @media (min-width: 355px) {
     nav .d-sm-inline { display: inline!important;}
 }
+.nav-make-room {
+    margin-top: 3rem;
+}
+.nav-anchor-negative {
+    position:relative; 
+    top: -4rem;    
+}
 
 /* HOME - HERO section */
 .hero {
     height: 89vh;
     height: var(--vh89);
     min-height: 27rem;
-    margin-top: 3rem;
     padding: 0 10%;
     position: relative;
     color: var(--color-dark1);
