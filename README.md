@@ -64,8 +64,15 @@ The following table list the planned features referenced with original goals:
 |F20|G10|display an event/training calendar, allow members to sign up/off|
 
 ### Structure
+The structure of the website to be built consist of
+- a Home page with short leads - all pointing to longer descriptions on the About page,
+- a long About page receiving traffic from the landing page with many sections with bookmark navigation, end of all sections refer back to Home with link
+- a Sign Up to receive emails page
+- a picture Gallery page about training, meetups, competitions
+- a News page related to club events
+- a Try Out page with every important to know for the first training
 
-
+![pages with navigation links](./assets/doc/site-structure.png "Site structure")
 
 Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
