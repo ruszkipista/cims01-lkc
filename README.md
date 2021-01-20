@@ -36,7 +36,34 @@ Stakeholders of the website:
 |G19|officer|increase our authority on the subject in the eyes of the visitors|
 
 ### Scope plane
+It has been decided to create a website. In light of that decision we do not go forward with
+- G5: this goal would be for presence on a social network site, not for a website
+- G10: the calendar functionality would require database and programming, therefore ot of scope for now
+- G17: at the moment could not obtain these training plans
 
+The following table list the planned features referenced with original goals:
+
+|F#|Goal|Feature|
+|--|----|-------|
+|F1|G3|build a custom static website with responsive pages for mobile, tablet and desktop|
+|F2||have navigation bar on each pages|
+|F3|G1, G19|display LKC’s logo and name, display club’s affiliation with AIKLF and IUKL with logo, name and link, provide description about each|
+|F4|G16|provide description about how to prepare, what to bring, what to expect on the first training|
+|F5|G7, G12|display attractive photos and texts, member testimonials|
+|F6|G13, G19|describe what we do|
+|F7|G13|describe why we train|
+|F8|G13, G19|describe how: training methods|
+|F9|G13, G19|describe who we are, how to contact us|
+|F10|G13|inform about training times|
+|F11|G13|describe where we train including venue facilities|
+|F12|G8|present news articles|
+|F13|G8, G9, G18|sign up to newsletter (email)|
+|F14|G6, G16|ask Medical Form to be filled|
+|F15|G3|allow first time applicant to announce self for training, so coach is notified, can learn more beforehand, this way improving first time experience|
+|F16|G3, G6, G14|explain membership|
+|F20|G10|display an event/training calendar, allow members to sign up/off|
+
+### Structure
 
 
 
