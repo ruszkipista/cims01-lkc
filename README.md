@@ -4,15 +4,23 @@ Static website to promote the [Limerick Kettlebell Club](https://www.facebook.co
 
 ![the webpage on different devices](./assets/doc/responsive-am-i.png "the webpage on different size devices")
 
-## UX
-### Strategy Plane
+Content
+- [1. UX design process](#1.-UX-design-process)
+ - [1.1 Strategy Plane](#1.1-Strategy-Plane)
+ - [1.2 Scope plane](#1.2-Scope-plane)
+ - [1.3 Structure plane](#1.3-Structure-plane)
+ - [1.4 Skeleton plane](#1.4-Skeleton-plane)
+ - [1.5 Surface plane](#1.5-Surface-plane)
+
+## 1. UX design process
+### 1.1 Strategy Plane
 Stakeholders of the website:
 - visitor - a person visiting the website, not a club member
 - member - club member, who actively trains or trained with the club
 - officer - affiliated with the club who executes or organises club matters though official capacity
 - AIKLF - sport organization which the club is associated with
 
-#### Goals and Objectives of Stakeholders (users)
+#### 1.1.1 Goals and Objectives of Stakeholders (users)
 |G#|User|Goals, Needs, Objectives|
 |--|----|------------------------|
 |G1|AIKLF|member organizations feature their affiliation with national (AIKLF) and world organization (IUKL) in info materials|
@@ -35,7 +43,7 @@ Stakeholders of the website:
 |G18|member|our heroes: get information about club related competition results|
 |G19|officer|increase our authority on the subject in the eyes of the visitors|
 
-### Scope plane
+### 1.2 Scope plane
 It has been decided to create a website. In light of that decision we do not go forward with
 - G5: this goal would be for presence on a social network site, not for a website
 - G10: the calendar functionality would require database and programming, therefore ot of scope for now
@@ -63,7 +71,7 @@ The following table list the planned features referenced with original goals:
 |F16|G3, G6, G14|explain membership|
 |F20|G10|display an event/training calendar, allow members to sign up/off|
 
-### Structure
+### 1.3 Structure plane
 The structure of the website to be built consist of
 - a Home page with short leads - all pointing to longer descriptions on the About page,
 - a long About page receiving traffic from the landing page with many sections with bookmark navigation, end of all sections refer back to Home with link
@@ -71,15 +79,19 @@ The structure of the website to be built consist of
 - a picture Gallery page about training, meetups, competitions
 - a News page related to club events
 - a Try Out page with every important to know for the first training
+- a Mission (statement) page
+- a Constitution page
 
 ![pages with navigation links](./assets/doc/site-structure.jpg "Site structure")
 
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+### 1.4 Skeleton plane
+Feature list in page/section structure with content hinting and navigation links. See the whole document [here](lkc-features.pdf) in PDF format.
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-- As a user type, I want to perform an action, so that I can achieve a goal.
-
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
+### 1.5 Surface plane
+Used the website coolors.co to come up with base colors for styling:
+![base colors](./assets/doc/color-palette.gif)
+Also decided that for secondary colors will use kettlebell weight color codes. See this image for sample of those colors:
+![base colors](./assets/doc/competition-kettlebell-lineup.png)
 
 ## Features
 
