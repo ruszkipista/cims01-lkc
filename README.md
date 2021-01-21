@@ -4,18 +4,23 @@ Static website to promote the [Limerick Kettlebell Club](https://www.facebook.co
 
 ![the webpage on different devices](./assets/doc/responsive-am-i.png "the webpage on different size devices")
 
-### Attention to the assessors
-I kept a journal during the development abou my daily activities, see it [here](./assets/doc/ci-ms1-study-notes-journal.pdf).
+### Attention assessor
+I kept a journal during the development about my daily activities, see it [here](./assets/doc/ci-ms1-study-notes-journal.pdf) frozen in time or [live](https://docs.google.com/document/d/19ohtJUawBUjIifB0DIKjILhsNA2ryk4tIevXz4fkTWM/edit?usp=sharing).
 
 ## Table of Content
-- [1. UX design process](#1-ux-design-process)
-  - [1.1 Strategy Plane](#11-strategy-plane)
-  - [1.2 Scope plane](#12-scope-plane)
-  - [1.3 Structure plane](#13-structure-plane)
-  - [1.4 Skeleton plane](#14-skeleton-plane)
-  - [1.5 Surface plane](#15-surface-plane)
+- [1. UX design](#1-ux-design "1. UX design")
+  - [1.1 Strategy Plane](#11-strategy-plane "1.1 Strategy Plane")
+  - [1.2 Scope plane](#12-scope-plane "1.2 Scope plane")
+  - [1.3 Structure plane](#13-structure-plane "1.3 Structure plane")
+  - [1.4 Skeleton plane](#14-skeleton-plane "1.4 Skeleton plane")
+  - [1.5 Surface plane](#15-surface-plane "1.5 Surface plane")
 
-## 1. UX design process
+- [3. Technologies and Tools Used](#3-technologies-and-tools-used "3. Technologies and Tools Used")
+- [4. Testing](#4-testing "4. Testing")
+- [5. Deployment](#5-deployment "5. Deployment")
+- [6. Credits](#6-credits "6. Credits")
+
+## 1. UX design
 ### 1.1 Strategy Plane
 Stakeholders of the website:
 - visitor - a person visiting the website, not a club member
@@ -94,9 +99,9 @@ See the whole document [here](lkc-features.pdf) in PDF format.
 
 ### 1.5 Surface plane
 Used the website coolors.co to come up with base colors for styling:
-![base colors](./assets/doc/color-palette.gif)
+![base colors](./assets/doc/color-palette.gif "Base colors")
 Also decided that for secondary colors will use kettlebell weight color codes. See this image for sample of those colors:
-![base colors](./assets/doc/competition-kettlebell-lineup.png)
+![secondary colors](./assets/doc/competition-kettlebell-lineup.png "Secondary colors")
 Choose font [Roboto](https://fonts.google.com/specimen/Roboto) for the headers.
 
 ## Features
@@ -114,15 +119,25 @@ In addition, you may also use this section to discuss plans for additional featu
 ### Features Left to Implement
 - Another feature idea
 
-## Technologies Used
+## 3. Technologies and Tools Used
 
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
+- The project's product (the website) was written in HTML and CSS, utilising [Bootstrap](https://getbootstrap.com/docs/5.0/) framework (which itself uses CSS and JavaScript). Bootstrap is used for its responsive utilities. There is a petite JavaScript in `index.html` to solve a specific issue.
+- The images were manipulated with program [Paint.NET](https://www.getpaint.net/). Mainly used for cropping, resizing, background removal and format conversion.
+- Created wireframes with program from [balsamiq](https://balsamiq.com/wireframes/)
+- Written study notes and collected textual content on [Google Docs](https://docs.google.com/)
+- The code was edited with [Visual Studio Code](https://code.visualstudio.com/), the prview was provided via [Live Server](https://github.com/ritwickdey/vscode-live-server) VS Code extension.
+- The code versions were managed with [Git](https://git-scm.com/downloads)
+- The code and project deliverables are stored on cloud service [Github](https://github.com/) repository with versions.
+- The website is deployed on [GitHub Pages](https://pages.github.com/)
+- The development machine runs [Windows 7](https://www.microsoft.com/en-us/software-download/windows7) operating system.
+- The website was tested on desktop on [Chrome](https://www.google.com/intl/en_ie/chrome/) and [Firefox](https://www.mozilla.org/en-US/firefox/) web browsers, also on a OnePlus2 mobile phone running [Android](https://www.android.com/) and mobile [Chrome](https://play.google.com/store/apps/details?id=com.android.chrome&hl=en) browser.
+- Generated favicons with [Favicon & App Icon Generator](https://www.favicon-generator.org/)
+- Played with colors on [coolors](https://coolors.co/), choose the base colors with it
+- Choose font using [Google Fonts](https://fonts.google.com/)
+- Searched the internet to find content, documentation and solution for issues using [Google](www.google.com)'s search service.
+- connected to the internet using [Vodafone](https://n.vodafone.ie/shop/broadband.html)'s broadband service.
 
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
-
-
-## Testing
+## 4. Testing
 
 In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
@@ -142,7 +157,7 @@ You should also mention in this section any interesting bugs or problems you dis
 
 If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
-## Deployment
+## 5. Deployment
 
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
 
@@ -154,7 +169,7 @@ In particular, you should provide all details of the differences between the dep
 In addition, if it is not obvious, you should also describe how to run your code locally.
 
 
-## Credits
+## 6. Credits
 
 ### Content
 - The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
