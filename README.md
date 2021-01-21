@@ -8,12 +8,12 @@ Static website to promote the [Limerick Kettlebell Club](https://www.facebook.co
 I kept a journal during the development abou my daily activities, see it [here](./assets/doc/ci-ms1-study-notes-journal.pdf).
 
 ## Table of Content
-- [1. UX design process](#1.-UX-design-process)
-  - [1.1 Strategy Plane](#1.1-Strategy-Plane)
-  - [1.2 Scope plane](#1.2-Scope-plane)
-  - [1.3 Structure plane](#1.3-Structure-plane)
-  - [1.4 Skeleton plane](#1.4-Skeleton-plane)
-  - [1.5 Surface plane](#1.5-Surface-plane)
+- [1. UX design process](#1-ux-design-process)
+  - [1.1 Strategy Plane](#11-strategy-plane)
+  - [1.2 Scope plane](#12-scope-plane)
+  - [1.3 Structure plane](#13-structure-plane)
+  - [1.4 Skeleton plane](#14-skeleton-plane)
+  - [1.5 Surface plane](#15-surface-plane)
 
 ## 1. UX design process
 ### 1.1 Strategy Plane
