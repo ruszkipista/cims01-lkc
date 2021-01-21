@@ -7,14 +7,14 @@ Static website to promote the [Limerick Kettlebell Club](https://www.facebook.co
 ### Attention assessor
 I kept a journal during the development about my daily activities, see it [here](./assets/doc/ci-ms1-study-notes-journal.pdf) frozen in time or [live](https://docs.google.com/document/d/19ohtJUawBUjIifB0DIKjILhsNA2ryk4tIevXz4fkTWM/edit?usp=sharing).
 
-## Table of Content
+## Contents
 - [1. UX design](#1-ux-design "1. UX design")
   - [1.1 Strategy Plane](#11-strategy-plane "1.1 Strategy Plane")
   - [1.2 Scope plane](#12-scope-plane "1.2 Scope plane")
   - [1.3 Structure plane](#13-structure-plane "1.3 Structure plane")
   - [1.4 Skeleton plane](#14-skeleton-plane "1.4 Skeleton plane")
   - [1.5 Surface plane](#15-surface-plane "1.5 Surface plane")
-
+- [2. Features Left to Implement](#2-features-left-to-implement "2. Features Left to Implement")
 - [3. Technologies and Tools Used](#3-technologies-and-tools-used "3. Technologies and Tools Used")
 - [4. Testing](#4-testing "4. Testing")
 - [5. Deployment](#5-deployment "5. Deployment")
@@ -93,8 +93,9 @@ The structure of the website to be built consist of
 ![pages with navigation links](./assets/doc/ci-ms1-site-structure.jpg "Website structure")
 
 ### 1.4 Skeleton plane
-Feature list in page/section structure with content hinting and navigation links. Sample:
-|Page / section|Feature#|Feature / Content description|Link or Action|
+Feature list in page/section structure with content hinting and navigation links. The following table is a sample, describes the page **TryOut**. Check out the whole list [here](ci-ms1-features.pdf) in PDF format.
+
+|Page / *section*|Feature#|Feature / Content description|Link or Action|
 |--------------|--------|-----------------------------|--------------|
 |**TryOut**|F4|come to your first free training||
 |*navbar*|F2|*same as on Home*||
@@ -103,7 +104,6 @@ Feature list in page/section structure with content hinting and navigation links
 ||F14|If you can, download, print, fill, sign Medical Self Assessment|file `MedicalSelfAssessment`|
 ||F15|Give us a heads up:<br>Form: name /email / telephone / about yourself + Submit button|Send email to coach|
 
-See the whole document [here](ci-ms1-features.pdf) in PDF format.
 
 ### 1.5 Surface plane
 Used the website coolors.co to come up with base colors for styling:
@@ -112,20 +112,13 @@ Also decided that for secondary colors will use kettlebell weight color codes. S
 ![secondary colors](./assets/doc/competition-kettlebell-lineup.png "Secondary colors")
 Choose font [Roboto](https://fonts.google.com/specimen/Roboto) for the headers.
 
-## Features
-
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
- 
-### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
-
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
-
-### Features Left to Implement
-- Another feature idea
+## 2. Features Left to Implement
+- **SignUp** page - Let visitors sign up for newsletter with email address
+- **Gallery** page - Show images/videos about trainings, competitions and meet-ups
+- **News** page - collection of news items in date descending order, 2 of the news articles goes on the **Home** page into `news` section
+- store news articles in database, automatically fill **News** page with them, enable news article editing to authorized users
+- send a selected group of articles in email to subscribers
+- create **Calendar** page of actual month, add reference date field to news articles, fill calendar page with news titles which have reference date in given month
 
 ## 3. Technologies and Tools Used
 
