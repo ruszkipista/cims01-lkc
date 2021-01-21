@@ -72,7 +72,7 @@ The structure of the website to be built consist of
 - a News page related to club events
 - a Try Out page with every important to know for the first training
 
-![pages with navigation links](./assets/doc/site-structure.png "Site structure")
+![pages with navigation links](./assets/doc/site-structure.jpg "Site structure")
 
 Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
