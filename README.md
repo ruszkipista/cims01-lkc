@@ -5,7 +5,7 @@ Static website to promote the [Limerick Kettlebell Club](https://www.facebook.co
 ![the webpage on different devices](./assets/doc/responsive-am-i.png "the webpage on different size devices")
 
 ### Attention to the assessors
-I kept a journal during the development abou my daily activities, see it [here](ci-ms1-study-notes-journal.pdf).
+I kept a journal during the development abou my daily activities, see it [here](./assets/doc/ci-ms1-study-notes-journal.pdf).
 
 ## Table of Content
 - [1. UX design process](#1.-UX-design-process)
