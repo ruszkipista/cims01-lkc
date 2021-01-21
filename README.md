@@ -81,19 +81,27 @@ The following table lists the planned features, each feature referenced with ori
 
 ### 1.3 Structure plane
 The structure of the website to be built consist of
-- a Home page with short leads - all pointing to longer descriptions on the About page,
-- a long About page receiving traffic from the landing page with many sections with bookmark navigation, end of all sections refer back to Home with link
-- a Sign Up to receive emails page
-- a picture Gallery page about training, meetups, competitions
-- a News page related to club events
-- a Try Out page with every important to know for the first training
-- a Mission (statement) page
-- a Constitution page
+- a **Home** page with short leads - all pointing to longer descriptions on the About page,
+- a long **About** page receiving traffic from the landing page with many sections with bookmark navigation, end of all sections refer back to **Home** with link
+- a **SignUp** page to sign up to receive emails
+- a picture **Gallery** page about training, meetups, competitions
+- a **News** page related to club events
+- a **TryOut** page with every important to know for the first training
+- a **Mission** (statement) page
+- a **Constitution** page
 
 ![pages with navigation links](./assets/doc/ci-ms1-site-structure.jpg "Website structure")
 
 ### 1.4 Skeleton plane
-Feature list in page/section structure with content hinting and navigation links. 
+Feature list in page/section structure with content hinting and navigation links. Sample:
+|Page / section|Feature#|Feature / Content description|Link or Action|
+|--------------|--------|-----------------------------|--------------|
+|**TryOut**|F4|come to your first free training||
+|*navbar*|F2|*same as on Home*||
+||F4|all you need to know for the first occasion: clothes, footwear, water, eating, attention from coach (first line - last line)|https://www.youtube.com/watch?v=cKx8xE8jJZs|
+||F4|- coach led, instructed exercises with kettlebell or bodyweight,<br>- everybody is doing the same, but varied to strength level and experience,<br>- length, composition of training,<br>- new joiners get more attention to ramp up their skills,<br>- coach gives out correction instructions to individuals to improve form,<br>- number of attendees are not limited, enabled by the size of the court||
+||F14|If you can, download, print, fill, sign Medical Self Assessment|file `MedicalSelfAssessment`|
+||F15|Give us a heads up:<br>Form: name /email / telephone / about yourself + Submit button|Send email to coach|
 
 See the whole document [here](ci-ms1-features.pdf) in PDF format.
 
