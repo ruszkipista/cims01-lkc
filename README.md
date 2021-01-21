@@ -4,13 +4,16 @@ Static website to promote the [Limerick Kettlebell Club](https://www.facebook.co
 
 ![the webpage on different devices](./assets/doc/responsive-am-i.png "the webpage on different size devices")
 
-Content
+### Attention to the assessors
+I kept a journal during the development abou my daily activities, see it [here](ci-ms1-study-notes-journal.pdf).
+
+## Table of Content
 - [1. UX design process](#1.-UX-design-process)
- - [1.1 Strategy Plane](#1.1-Strategy-Plane)
- - [1.2 Scope plane](#1.2-Scope-plane)
- - [1.3 Structure plane](#1.3-Structure-plane)
- - [1.4 Skeleton plane](#1.4-Skeleton-plane)
- - [1.5 Surface plane](#1.5-Surface-plane)
+  - [1.1 Strategy Plane](#1.1-Strategy-Plane)
+  - [1.2 Scope plane](#1.2-Scope-plane)
+  - [1.3 Structure plane](#1.3-Structure-plane)
+  - [1.4 Skeleton plane](#1.4-Skeleton-plane)
+  - [1.5 Surface plane](#1.5-Surface-plane)
 
 ## 1. UX design process
 ### 1.1 Strategy Plane
@@ -44,12 +47,12 @@ Stakeholders of the website:
 |G19|officer|increase our authority on the subject in the eyes of the visitors|
 
 ### 1.2 Scope plane
-It has been decided to create a website. In light of that decision we do not go forward with
-- G5: this goal would be for presence on a social network site, not for a website
-- G10: the calendar functionality would require database and programming, therefore ot of scope for now
+It has been decided to create a static website. In light of that decision we do not go forward with
+- G5: this goal would be for presence on a social network site, not for a homepage,
+- G10: the calendar functionality would require database and programming, therefore ot of scope for now,
 - G17: at the moment could not obtain these training plans
 
-The following table list the planned features referenced with original goals:
+The following table lists the planned features, each feature referenced with original goal(s):
 
 |F#|Goal|Feature|
 |--|----|-------|
@@ -85,13 +88,16 @@ The structure of the website to be built consist of
 ![pages with navigation links](./assets/doc/site-structure.jpg "Site structure")
 
 ### 1.4 Skeleton plane
-Feature list in page/section structure with content hinting and navigation links. See the whole document [here](lkc-features.pdf) in PDF format.
+Feature list in page/section structure with content hinting and navigation links. 
+
+See the whole document [here](lkc-features.pdf) in PDF format.
 
 ### 1.5 Surface plane
 Used the website coolors.co to come up with base colors for styling:
 ![base colors](./assets/doc/color-palette.gif)
 Also decided that for secondary colors will use kettlebell weight color codes. See this image for sample of those colors:
 ![base colors](./assets/doc/competition-kettlebell-lineup.png)
+Choose font [Roboto](https://fonts.google.com/specimen/Roboto) for the headers.
 
 ## Features
 
