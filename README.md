@@ -90,12 +90,12 @@ The structure of the website to be built consist of
 - a Mission (statement) page
 - a Constitution page
 
-![pages with navigation links](./assets/doc/site-structure.jpg "Site structure")
+![pages with navigation links](./assets/doc/ci-ms1-site-structure.jpg "Website structure")
 
 ### 1.4 Skeleton plane
 Feature list in page/section structure with content hinting and navigation links. 
 
-See the whole document [here](lkc-features.pdf) in PDF format.
+See the whole document [here](ci-ms1-features.pdf) in PDF format.
 
 ### 1.5 Surface plane
 Used the website coolors.co to come up with base colors for styling:
@@ -125,12 +125,12 @@ In addition, you may also use this section to discuss plans for additional featu
 - The images were manipulated with program [Paint.NET](https://www.getpaint.net/). Mainly used for cropping, resizing, background removal and format conversion.
 - Created wireframes with program from [balsamiq](https://balsamiq.com/wireframes/)
 - Written study notes and collected textual content on [Google Docs](https://docs.google.com/)
-- The code was edited with [Visual Studio Code](https://code.visualstudio.com/), the prview was provided via [Live Server](https://github.com/ritwickdey/vscode-live-server) VS Code extension.
+- The code was edited with [Visual Studio Code](https://code.visualstudio.com/), the preview was provided via [Live Server](https://github.com/ritwickdey/vscode-live-server) VS Code extension.
 - The code versions were managed with [Git](https://git-scm.com/downloads)
 - The code and project deliverables are stored on cloud service [Github](https://github.com/) repository with versions.
 - The website is deployed on [GitHub Pages](https://pages.github.com/)
 - The development machine runs [Windows 7](https://www.microsoft.com/en-us/software-download/windows7) operating system.
-- The website was tested on desktop on [Chrome](https://www.google.com/intl/en_ie/chrome/) and [Firefox](https://www.mozilla.org/en-US/firefox/) web browsers, also on a OnePlus2 mobile phone running [Android](https://www.android.com/) and mobile [Chrome](https://play.google.com/store/apps/details?id=com.android.chrome&hl=en) browser.
+- The website was tested on desktop on [Chrome](https://www.google.com/intl/en_ie/chrome/) and [Firefox](https://www.mozilla.org/en-US/firefox/) web browsers, also on a [OnePlus2](https://www.oneplus.com/ie/support/spec/oneplus-2) mobile phone running [Android](https://www.android.com/) and mobile [Chrome](https://play.google.com/store/apps/details?id=com.android.chrome&hl=en) browser.
 - Generated favicons with [Favicon & App Icon Generator](https://www.favicon-generator.org/)
 - Played with colors on [coolors](https://coolors.co/), choose the base colors with it
 - Choose font using [Google Fonts](https://fonts.google.com/)
