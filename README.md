@@ -4,7 +4,7 @@ Static website to promote the [Limerick Kettlebell Club](https://www.facebook.co
 
 ![the webpage on different devices](./assets/doc/responsive-am-i.png "the webpage on different size devices")
 
-### Attention assessor
+### Attention assessor!
 I kept a journal during the development about my daily activities, see it [here](./assets/doc/ci-ms1-study-notes-journal.pdf) frozen in time or [live](https://docs.google.com/document/d/19ohtJUawBUjIifB0DIKjILhsNA2ryk4tIevXz4fkTWM/edit?usp=sharing).
 
 ## Contents
@@ -87,6 +87,7 @@ The structure of the website to be built consist of
 - a picture **Gallery** page about training, meetups, competitions
 - a **News** page related to club events
 - a **TryOut** page with every important to know for the first training
+- a **Safety** (rules) page to govern the behaviours in the gym
 - a **Mission** (statement) page
 - a **Constitution** page
 
@@ -104,7 +105,7 @@ Feature list in page/section structure with content hinting and navigation links
 ||F14|If you can, download, print, fill, sign Medical Self Assessment|file `MedicalSelfAssessment`|
 ||F15|Give us a heads up:<br>Form: name /email / telephone / about yourself + Submit button|Send email to coach|
 
-Created wireframes for **TryOut** page in 3 width, see the others as well [here](./assets/doc/ci-ms1-wireframes.pdf).
+Created wireframes for **TryOut** page in 3 width, see the others as well [here](./assets/doc/ci-ms1-wireframes.pdf) or the balsamiq file [here](./assets/doc/ci-ms1-wireframes.bmpr).
 ![TryOut page](./assets/doc/ci-ms1-wireframe-tryout.png "TryOut page")
 
 ### 1.5 Surface plane
@@ -112,7 +113,7 @@ Used the website coolors.co to come up with base colors for styling:
 ![base colors](./assets/doc/color-palette.gif "Base colors")
 Also decided that for secondary colors will use kettlebell weight color codes. See this image for sample of those colors:
 ![secondary colors](./assets/doc/competition-kettlebell-lineup.png "Secondary colors")
-Choose font [Roboto](https://fonts.google.com/specimen/Roboto) for the headers.
+Chose font [Roboto](https://fonts.google.com/specimen/Roboto) for the headers.
 
 ## 2. Features Left to Implement
 - **Gallery** page - Show images/videos about trainings, competitions and meet-ups
