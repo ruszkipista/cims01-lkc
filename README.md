@@ -104,7 +104,8 @@ Feature list in page/section structure with content hinting and navigation links
 ||F14|If you can, download, print, fill, sign Medical Self Assessment|file `MedicalSelfAssessment`|
 ||F15|Give us a heads up:<br>Form: name /email / telephone / about yourself + Submit button|Send email to coach|
 
-Created wireframes for **Home** page in 3 width, see them [here](./assets/doc/ci-ms1-wireframes.pdf).
+Created wireframes for **TryOut** page in 3 width, see the others as well [here](./assets/doc/ci-ms1-wireframes.pdf).
+![TryOut page](./assets/doc/ci-ms1-wireframe-tryout.png "TryOut page")
 
 ### 1.5 Surface plane
 Used the website coolors.co to come up with base colors for styling:
