@@ -93,7 +93,7 @@ The structure of the website to be built consist of
 ![pages with navigation links](./assets/doc/ci-ms1-site-structure.jpg "Website structure")
 
 ### 1.4 Skeleton plane
-Feature list in page/section structure with content hinting and navigation links. The following table is a sample, describes the page **TryOut**. Check out the whole list [here](ci-ms1-features.pdf) in PDF format.
+Feature list in page/section structure with content hinting and navigation links. The following table is a sample, describes the page **TryOut**. Check out the whole list [here](./assets/doc/ci-ms1-features.pdf) in PDF format.
 
 |Page / *section*|Feature#|Feature / Content description|Link or Action|
 |--------------|--------|-----------------------------|--------------|
@@ -104,6 +104,7 @@ Feature list in page/section structure with content hinting and navigation links
 ||F14|If you can, download, print, fill, sign Medical Self Assessment|file `MedicalSelfAssessment`|
 ||F15|Give us a heads up:<br>Form: name /email / telephone / about yourself + Submit button|Send email to coach|
 
+Created wireframes for **Home** page in 3 width, see them [here](./assets/doc/ci-ms1-wireframes.pdf).
 
 ### 1.5 Surface plane
 Used the website coolors.co to come up with base colors for styling:
