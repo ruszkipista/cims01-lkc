@@ -113,8 +113,8 @@ Also decided that for secondary colors will use kettlebell weight color codes. S
 Choose font [Roboto](https://fonts.google.com/specimen/Roboto) for the headers.
 
 ## 2. Features Left to Implement
-- **SignUp** page - Let visitors sign up for newsletter with email address
 - **Gallery** page - Show images/videos about trainings, competitions and meet-ups
+- **SignUp** page - Let visitors sign up with email address for newsletter
 - **News** page - collection of news items in date descending order, 2 of the news articles goes on the **Home** page into `news` section
 - store news articles in database, automatically fill **News** page with them, enable news article editing to authorized users
 - send a selected group of articles in email to subscribers
