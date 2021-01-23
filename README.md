@@ -161,16 +161,17 @@ and the class definition in `style.css`:
 ```
 The solution creates a relative positioned anchor tag above its normal place, so the jump target becomes above the real target, so the target section gets positioned right below the navbar.
 ### 4.2 Trouble with opacity layer on hero image
-**Home** page / Hero image / Call To Action button did not work, although I implemented the same way as I did in thw Whiskey Drom project. After some debugging I concluded that the opacity layer is in the way, that prevents the clicking. When I commented out this layer, the button worked.
+**Home** page / Hero image / Call To Action button did not work, although I implemented the same way as we did in the "Whiskey Drop" project. After some debugging I concluded that the opacity layer is in the way, which prevents the clicking. When I commented out this layer, the button worked.
 Tried to play with CSS z-index, but was not satisfied with the lot of changes it required just to set up the necessary order of objects, only to make it work.
 
-Found solution [here](https://www.digitalocean.com/community/tutorials/how-to-change-a-css-background-images-opacity) / Method 2). In essence, threw out the `<div>&nbsp;<div>` from HTML and put the opacity layer functionality into `.hero:before` in `style.css`, where `.hero` holds the hero image as a background image.
+Found solution [here](https://www.digitalocean.com/community/tutorials/how-to-change-a-css-background-images-opacity) / Method 2. In essence, I threw out the `<div>&nbsp;<div>` from HTML and put the opacity layer functionality into `.hero:before` in `style.css`, where `.hero` holds the content displayed above the hero image.
 
 code in `index.html`:
 ```HTML
-    <!-- HEADER - HERO section -->
-    <header class="hero nav-make-room">
-      ...
+<!-- HEADER - HERO section -->
+  <header class="hero ...">
+  ...
+</header>
 ```
 code in `style.css`:
 ```CSS
@@ -186,11 +187,40 @@ code in `style.css`:
     top: 0;
     left: 0;
     background: url(...) center center / cover no-repeat;
-    background-color: var(--color-light1);
+    background-color: ...;
     opacity: 0.4;
     z-index: -1;
 }
 ```
+### 4.3 Style list item decorations
+When created  `constitution.html` page, where I have a long document with numbered sections, I wanted to style each list item's first paragraph as a heading (e.g.```<h2>```. When I did that, the number in front of the paragraph was not styled the same way. See **expected** result here:
+![style decimal](./assets/doc/ci-ms1-li-decimal-styling-goal.png)
+I could not find simple solution on the internet, so I solved this way:
+```HTML
+<ol class="... list-with-header">
+   <li>
+      <p>Name and Affiliation of Club</p>
+      <p>The name of the Club shall be ...</p>
+   </li>
+   <li>
+      <p>Club Mission</p>
+      <p>To promote Kettlebell sport by creating a ...</p>
+   </li>
+  ...
+</ol>
+```
+Solution: I figured, that to style the numbers, I need to style the whole <ol> and then restore the normal style (font-height) for every child element, except the first one:
+```CSS
+/* style the numbers of the <li>s of <ol> */
+.list-with-header > li {
+    font-size: 1.5rem;    
+}
+/* then dial back for the child elements (except for the first one) */
+.list-with-header > li > *:not(:first-child) {
+    font-size: 1rem;
+}
+```
+
 ## 5. Testing
 
 First step in testing was the validation of HTML and CSS code with [Markup Validation Service](https://validator.w3.org/) and [CSS Validation Service](https://jigsaw.w3.org/css-validator/) respectively. I did the validations a couple of times during development and once at the end. Now all 6 html pages validate to "Document checking completed. No errors or warnings to show.". The `style.css` file validates to "Congratulations! No Error Found."
