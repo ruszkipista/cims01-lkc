@@ -17,6 +17,10 @@ I kept a journal during the development about my daily activities, see it [here]
 - [2. Features Left to Implement](#2-features-left-to-implement "2. Features Left to Implement")
 - [3. Technologies and Tools Used](#3-technologies-and-tools-used "3. Technologies and Tools Used")
 - [4. Issues solved during development](#4-issues-solved-during-development "4. Issues solved during development")
+  - [4.1 Top-Fixed navbar and anchors](#41-top-fixed-navbar-and-anchors "4.1 Top-Fixed navbar and anchors")
+  - [4.2 Trouble with opacity layer on hero image](#42-trouble-with-opacity-layer-on-hero-image "4.2 Trouble with opacity layer on hero image")
+  - [4.3 Style list item decorators](#43-style-list-item-decorators "4.3 Style list item decorators")
+  - [4.4 Content hinting on mobile device](#44-content-hinting-on-mobile-device "4.4 Content hinting on mobile device")
 - [5. Testing](#5-testing "5. Testing")
 - [6. Deployment](#6-deployment "6. Deployment")
 - [7. Credits](#7-credits "7. Credits")
@@ -192,7 +196,7 @@ code in `style.css`:
     z-index: -1;
 }
 ```
-### 4.3 Style list item decorations
+### 4.3 Style list item decorators
 When created  `constitution.html` page, where I have a long document with numbered sections, I wanted to style each list item's first paragraph as a heading (e.g.```<h2>```. When I did that, the number in front of the paragraph was not styled the same way. See **expected** result here:
 
 ![style decimal](./assets/doc/ci-ms1-li-decimal-styling-goal.png)
@@ -222,8 +226,36 @@ and styling in `style.css`:
     font-size: 1rem;
 }
 ```
-Solution: I figured, that to style the numbers, I need to style the whole `<ol>` and then restore the normal style (font-height) for every child element, except the first one.
+Solution: I figured, that to style the numbers, I need to style the whole `<ol>` and then restore the normal style (`font-height`) for every child element, except the first one.
 
+### 4.4 Content hinting on mobile device
+Issue: I wanted content hinting on the landing page, by revealing at the bottom of the screen, that the page continues further below the hero image. To achive that, I used `height: 89vh` on the container of the hero image. To my surprise, the `89vh` was not enough on mobile devices, although it looked ok during preview on simulated mobile device screen sizes. Se expected on the left, reality on the right.
+![content hinting](./assets/doc/ci-ms1-content-hinting.png)
+
+The problem is that the browser on a mobile device determines the VH unit in a different way from the browser on a desktop. See issue and solution [here](https://css-tricks.com/the-trick-to-viewport-units-on-mobile/)
+
+Applied solution: created variable `--vh89` on **Home** page to determine the `89%` of "real" `VH` (Vieport Height) for mobile device browsers:
+```HTML
+<script>
+  function setRealVieportHeightVariable(){
+    let vh89 = window.innerHeight * 0.89;
+    document.documentElement.style.setProperty('--vh89', `${vh89}px`);
+  };
+  setRealVieportHeightVariable();
+  window.addEventListener('resize', setRealVieportHeightVariable);
+</script>
+```
+The event listener is there for capturing the orientation change between portrait and landscape. 
+
+And used the variable `--vh89` in the `style.css`:
+```CSS
+.hero {
+    height: 89vh;
+    height: var(--vh89);
+    min-height: 27rem;
+    ...
+}
+```
 
 ## 5. Testing
 
