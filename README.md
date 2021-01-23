@@ -194,7 +194,9 @@ code in `style.css`:
 ```
 ### 4.3 Style list item decorations
 When created  `constitution.html` page, where I have a long document with numbered sections, I wanted to style each list item's first paragraph as a heading (e.g.```<h2>```. When I did that, the number in front of the paragraph was not styled the same way. See **expected** result here:
+
 ![style decimal](./assets/doc/ci-ms1-li-decimal-styling-goal.png)
+
 I could not find simple solution on the internet, so I solved this way:
 ```HTML
 <ol class="... list-with-header">
@@ -209,7 +211,7 @@ I could not find simple solution on the internet, so I solved this way:
   ...
 </ol>
 ```
-Solution: I figured, that to style the numbers, I need to style the whole <ol> and then restore the normal style (font-height) for every child element, except the first one:
+and styling in `style.css`:
 ```CSS
 /* style the numbers of the <li>s of <ol> */
 .list-with-header > li {
@@ -220,6 +222,8 @@ Solution: I figured, that to style the numbers, I need to style the whole <ol> a
     font-size: 1rem;
 }
 ```
+Solution: I figured, that to style the numbers, I need to style the whole `<ol>` and then restore the normal style (font-height) for every child element, except the first one.
+
 
 ## 5. Testing
 
