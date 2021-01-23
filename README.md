@@ -16,9 +16,10 @@ I kept a journal during the development about my daily activities, see it [here]
   - [1.5 Surface plane](#15-surface-plane "1.5 Surface plane")
 - [2. Features Left to Implement](#2-features-left-to-implement "2. Features Left to Implement")
 - [3. Technologies and Tools Used](#3-technologies-and-tools-used "3. Technologies and Tools Used")
-- [4. Testing](#4-testing "4. Testing")
-- [5. Deployment](#5-deployment "5. Deployment")
-- [6. Credits](#6-credits "6. Credits")
+- [4. Issues solved during development](#4-issues-solved-during-development "4. Issues solved during development")
+- [5. Testing](#5-testing "5. Testing")
+- [6. Deployment](#6-deployment "6. Deployment")
+- [7. Credits](#7-credits "7. Credits")
 
 ## 1. UX design
 ### 1.1 Strategy Plane
@@ -142,9 +143,57 @@ Chose font [Roboto](https://fonts.google.com/specimen/Roboto) for the headers.
 - Searched the internet to find content, documentation and solution for issues using [Google](www.google.com)'s search service.
 - connected to the internet using [Vodafone](https://n.vodafone.ie/shop/broadband.html)'s broadband service.
 
-## 4. Testing
+## 4. Issues solved during development
+### 4.1 Top-Fixed navbar and anchors
+At late stage added the top-fixed navbar to all pages. Before it was only on **Home**. After the change realised, that when jumping from Home to About to a specific section, e.g. `who`, the title of that section is not visible, because the target section get scrolled to the top of the page and the navbar obscures the top of the section.
+Found solution [here](https://stackoverflow.com/questions/19532678/anchored-bookmarks-conflicting-with-fixed-top-of-page-nav).
 
-First step in testing was the validation of HTML and CSS code with [Markup Validation Service](https://validator.w3.org/) and [CSS Validation Service](https://jigsaw.w3.org/css-validator/) respectively. I did the validations a couple of times during development and once at the end. Now all pages validates to "Document checking completed. No errors or warnings to show."
+For each section created its own achor tag, e.g. for `who`:
+```HTML
+<a class="nav-anchor-negative" id="who"></a>
+```
+and the class definition in `style.css`:
+```CSS
+.nav-anchor-negative {
+    position:relative; 
+    top: -4rem;    
+}
+```
+The solution creates a relative positioned anchor tag above its normal place, so the jump target becomes above the real target, so the target section gets positioned right below the navbar.
+### 4.2 Trouble with opacity layer on hero image
+**Home** page / Hero image / Call To Action button did not work, although I implemented the same way as I did in thw Whiskey Drom project. After some debugging I concluded that the opacity layer is in the way, that prevents the clicking. When I commented out this layer, the button worked.
+Tried to play with CSS z-index, but was not satisfied with the lot of changes it required just to set up the necessary order of objects, only to make it work.
+
+Found solution [here](https://www.digitalocean.com/community/tutorials/how-to-change-a-css-background-images-opacity) / Method 2). In essence, threw out the `<div>&nbsp;<div>` from HTML and put the opacity layer functionality into `.hero:before` in `style.css`, where `.hero` holds the hero image as a background image.
+
+code in `index.html`:
+```HTML
+    <!-- HEADER - HERO section -->
+    <header class="hero nav-make-room">
+      ...
+```
+code in `style.css`:
+```CSS
+.hero {
+    position: relative;
+    ...
+}
+.hero:before {
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(...) center center / cover no-repeat;
+    background-color: var(--color-light1);
+    opacity: 0.4;
+    z-index: -1;
+}
+```
+## 5. Testing
+
+First step in testing was the validation of HTML and CSS code with [Markup Validation Service](https://validator.w3.org/) and [CSS Validation Service](https://jigsaw.w3.org/css-validator/) respectively. I did the validations a couple of times during development and once at the end. Now all 6 html pages validate to "Document checking completed. No errors or warnings to show.". The `style.css` file validates to "Congratulations! No Error Found."
 
 In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
@@ -162,21 +211,16 @@ In addition, you should mention in this section how your project looks and works
 
 You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
-
-## 5. Deployment
-
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
-
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
-
-In addition, if it is not obvious, you should also describe how to run your code locally.
 
 
-## 6. Credits
+## 6. Deployment
+
+The website is deployed to GitHub Pages automatically by GitHub. The assigned web address is [ruszkipista.github.io/cims01-lkc/](https://ruszkipista.github.io/cims01-lkc/).
+Once you host your project files on GitHub and you setup the deployment to GitHub Pages via <repository>/settings/GitHub Pages, then GitHub will copy your files to a webserver every occasion you submit a commit or modify a file. You do not need to do anything to actualize the content of your website.
+
+If you want to deploy this project to a different hosting solution, you need to copy all the files from this repository into the home folder of the webserver, keeping the folder structure as is.
+
+## 7. Credits
 
 ### Content
 - The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
