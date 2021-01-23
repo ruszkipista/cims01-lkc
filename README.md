@@ -277,8 +277,6 @@ In addition, you should mention in this section how your project looks and works
 
 You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
 
-
-
 ## 6. Deployment
 
 The website is deployed to GitHub Pages automatically by GitHub. The assigned web address is [ruszkipista.github.io/cims01-lkc/](https://ruszkipista.github.io/cims01-lkc/).
@@ -288,12 +286,25 @@ If you want to deploy this project to a different hosting solution, you need to 
 
 ## 7. Credits
 
+### Acknowledgements
+My inspiration for this project came from the experience of lack of information when I was looking for a kettlebell group in Limerick to train with.
+
 ### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+The text built into the pages came from the following sources:
+- Club coach Nancy Flexman - especially the Mission Statement and Club Constitution, club history, training composition
+- various kettlebell specific websites, see the exact source in the code
+  - www.aiklf.com
+  - www.giri-iukl.com/en/
+  - www.kettlebellkings.com
+  - www.dragondoor.com
+  - breakingmuscle.co.uk
+- fitness self assessment form is from https://www.sampleforms.com/fitness-assessment-form.html
+- the TryOut page is my own writing (except the "Training session", that is from Nancy)
 
 ### Media
-- The photos used in this site were obtained from ...
-
-### Acknowledgements
-
-- I received inspiration for this project from X
+See the source of images in the code comments. Here is the short list sources:
+- hero picture is from the club's facebook site
+- logos are from their respective organization's website
+- kettlebell images are mainly from www.kettlebellkings.com
+- movement phases images from www.kettlebellsport.eu
+- google map widget of Delta is from their website www.deltasportsdome.com/
