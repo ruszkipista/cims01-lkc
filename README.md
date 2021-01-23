@@ -54,7 +54,7 @@ Stakeholders of the website:
 ### 1.2 Scope plane
 It has been decided to create a static website. In light of that decision we do not go forward with
 - G5: this goal would be for presence on a social network site, not for a homepage,
-- G10: the calendar functionality would require database and programming, therefore ot of scope for now,
+- G10: the calendar functionality would require database and programming, therefore out of scope for now,
 - G17: at the moment could not obtain these training plans
 
 The following table lists the planned features, each feature referenced with original goal(s):
@@ -125,7 +125,7 @@ Chose font [Roboto](https://fonts.google.com/specimen/Roboto) for the headers.
 
 ## 3. Technologies and Tools Used
 
-- The project's product (the website) was written in HTML and CSS, utilising [Bootstrap](https://getbootstrap.com/docs/5.0/) framework (which itself uses CSS and JavaScript). Bootstrap is used for its responsive utilities. There is a petite JavaScript in `index.html` to solve a specific issue.
+- The project's product (the website) was written in HTML and CSS, utilising [Bootstrap 5.0 Beta](https://getbootstrap.com/docs/5.0/) framework (which itself uses CSS and JavaScript). Bootstrap is used for its responsive utilities. There is a petite JavaScript in `index.html` to solve a specific issue.
 - The images were manipulated with program [Paint.NET](https://www.getpaint.net/). Mainly used for cropping, resizing, background removal and format conversion.
 - Created wireframes with program from [balsamiq](https://balsamiq.com/wireframes/)
 - Written study notes and collected textual content on [Google Docs](https://docs.google.com/)
@@ -136,12 +136,15 @@ Chose font [Roboto](https://fonts.google.com/specimen/Roboto) for the headers.
 - The development machine runs [Windows 7](https://www.microsoft.com/en-us/software-download/windows7) operating system.
 - The website was tested on desktop on [Chrome](https://www.google.com/intl/en_ie/chrome/) and [Firefox](https://www.mozilla.org/en-US/firefox/) web browsers, also on a [OnePlus2](https://www.oneplus.com/ie/support/spec/oneplus-2) mobile phone running [Android](https://www.android.com/) and mobile [Chrome](https://play.google.com/store/apps/details?id=com.android.chrome&hl=en) browser.
 - Generated favicons with [Favicon & App Icon Generator](https://www.favicon-generator.org/)
-- Played with colors on [coolors](https://coolors.co/), choose the base colors with it
-- Choose font using [Google Fonts](https://fonts.google.com/)
+- Generated one image (on top of this Readme) of how the website looks on different size devices with [Am I Responsive](http://ami.responsivedesign.is/)
+- Played with colors on [coolors](https://coolors.co/), chose the base colors with it
+- Chose font using [Google Fonts](https://fonts.google.com/)
 - Searched the internet to find content, documentation and solution for issues using [Google](www.google.com)'s search service.
 - connected to the internet using [Vodafone](https://n.vodafone.ie/shop/broadband.html)'s broadband service.
 
 ## 4. Testing
+
+First step in testing was the validation of HTML and CSS code with [Markup Validation Service](https://validator.w3.org/) and [CSS Validation Service](https://jigsaw.w3.org/css-validator/) respectively. I did the validations a couple of times during development and once at the end. Now all pages validates to "Document checking completed. No errors or warnings to show."
 
 In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
