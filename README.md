@@ -314,7 +314,9 @@ I followed [this](https://docs.github.com/en/github/working-with-github-pages/co
 6. After a while you are presented whith this status message at the same place
 ![Settings/GitHub Pages](./assets/doc/ci-ms1-deployment-5.png "Your site is published")
 
-If you want to deploy this project to a different hosting solution, you need to copy all the files from this repository into the home folder of the webserver, keeping the folder structure as is.
+If you want to deploy this project to a different hosting solution, you need to copy all the files from this repository. Follow the repository cloning steps from [this](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) tutorial.
+After you have your local copies of these files, you copy them into the home folder of the webserver, keeping the folder structure as is.
+Just because this is a static website, you can even start up the Home page by double clicking on the `index.html` file in your local file system - effectively launching you default browser with the starting page.
 
 ## 7. Credits
 
