@@ -322,6 +322,7 @@ Just because this is a static website, you can even start up the Home page by do
 
 ### Acknowledgements
 My inspiration for this project came from the experience of lack of information when I was looking for a kettlebell group in Limerick to train with.
+I thank [Nishant Kumar](https://github.com/nishant8BITS) for mentoring me during the project.
 
 ### Content
 The text built into the pages came from the following sources:
