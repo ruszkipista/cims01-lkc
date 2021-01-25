@@ -1,263 +1,284 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Bootstrap Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- favicon -->
-    <link rel="shortcut icon" href="./assets/img/logo-lkc-96x96.png" type="image/x-icon">
-    <!-- meta tags -->
-    <meta name="description" content="Join the Limerick Kettlebell Lifting Club for training and community!">
-    <meta name="keywords"    content="kettlebell, training, limerick, kettlebell sport, girja">
-    <meta name="author"      content="ruszkipista">
-    <!-- page title -->
-    <title>Limerick Kettlebell Club</title>
-    <!-- Bootstrap CSS component -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <!-- local CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
 
-    <script>
-      // The following calculation is needed to determine the "real" VH (Vieport Height)
-      // for mobile device browsers, see issue here: https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
-      function setRealVieportHeightVariable(){
-        let vh89 = window.innerHeight * 0.89;
-        // set the value in the --vh custom property to the root of the document
-        document.documentElement.style.setProperty('--vh89', `${vh89}px`);
-      };
-      setRealVieportHeightVariable();
-      // We listen to the resize event
-      window.addEventListener('resize', setRealVieportHeightVariable);
-    </script>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="./assets/img/logo-lkc-96x96.png" type="image/x-icon">
+  <meta name="description" content="Join the Limerick Kettlebell Lifting Club for training and community!">
+  <meta name="keywords" content="kettlebell, training, limerick, kettlebell sport, girja">
+  <meta name="author" content="ruszkipista">
+  <title>Limerick Kettlebell Club</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
 
-  <body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-md navbar-dark p-0 fixed-top">
-      <div class="container-fluid p-2 m-0">
-        <a class="navbar-brand nav-logo mx-0 p-0" id="logo-lkc" href="index.html"></a>
-        <a class="navbar-brand mx-2 d-none d-sm-inline" href="index.html">Limerick Kettlebell Club</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Collapsable part -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto">
-            <!-- Home -->
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-            </li>
-            <!-- Contact -->
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./about.html#contact">Contact</a>
-            </li>
-            <!-- About -->
-            <li class="nav-item">
-              <a class="nav-link" href="./about.html">About</a>
-            </li>
-            <!-- Documents -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Documents
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="./safety.html">Safety 101</a></li>
-                <li><a class="dropdown-item" href="./mission.html">Mission Statement</a></li>
-                <li><a class="dropdown-item" href="./constitution.html">Constitution</a></li>
-                <li><a class="dropdown-item" href="./assets/doc/fitness-health-assessment.pdf" target="_blank">Self Assessment</a></li>
-              </ul>
-            </li>
-          </ul>
-          <a class="btn btn-outline-primary mx-auto" href="./tryout.html">Try Out</a>
-          <a id="logo-aiklf" class="nav-logo float-end" href="./about.html#aiklf"></a>
-          <a id="logo-iukl"  class="nav-logo float-end" href="./about.html#iukl"></a>
-        </div>
-      </div>
-    </nav>
+  <script>
+    // The following calculation is needed to determine the "real" VH (Vieport Height)
+    // for mobile device browsers, see issue here: https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
+    function setRealVieportHeightVariable() {
+      let vh89 = window.innerHeight * 0.89;
+      // set the value in the --vh custom property to the root of the document
+      document.documentElement.style.setProperty('--vh89', `${vh89}px`);
+    };
+    setRealVieportHeightVariable();
+    // We listen to the resize event
+    window.addEventListener('resize', setRealVieportHeightVariable);
+  </script>
+</head>
 
-    <!-- HEADER - HERO section -->
-    <header class="hero nav-make-room">
-      <div class="hero-height-top d-flex align-items-center">
-        <h1 class="text-capitalize text-center mx-auto"><strong>Kettlebell is the world’s #1 handheld gym for<wbr> extreme fitness</strong><br>
-          <span class="h6 rounded-pill text-color-light1 bg-color-normal3 p-1 px-2">First session is FREE!</span>
-        </h1>
-      </div>
-      <div class="hero-height-middle d-flex align-items-center">
-        <a class="btn btn-lg bg-color-normal2 text-light text-capitalize mx-auto" href="./tryout.html">Join us!</a>
-      </div>
-      <div class="hero-height-bottom d-flex align-items-center">
-        <h2 class="text-capitalize text-center mx-auto"><strong>Come for the training,<wbr> stay for the community</strong><br>
-          <span class="h6 rounded-pill text-color-light1 bg-color-normal1 p-1 px-2">New members welcome!</span>
-        </h2>
-      </div>
-    </header>
-
-    <main class="container-fluid p-0 m-0">
-
-      <!-- MAIN - WHAT HOW WHY WHO section -->
-      <section class="row bg-color-light1 pt-3 m-0">
-        <!-- WHAT -->
-        <div class="border-left-08kg col-sm-6">
-          <h2>What we do <a class="h6 float-end mt-2" href="./about.html#what">... read more</a></h2>
-          <p>Kettlebell Sport or Girevoy Sport is the traditional Russian sport of kettlebell lifting. Best described as “endurance weightlifting". Kettlebell Sport evolved from athletic and military circles and slowly spread to the wider population.</p>
-        </div>
-        
-        <!-- HOW -->
-        <div class="border-left-12kg col-sm-6">
-          <h2>How we do it <a class="h6 float-end mt-2" href="./about.html#how">... read more</a></h2>
-          <p>Our training consists of various types of kettlebell lifts mixed with bodyweight exercises and stretching, all under an hour.</p>
-        </div>
-
-        <!-- WHY -->
-        <div class="border-left-24kg col-sm-6">
-          <h2>Why we train <a class="h6 float-end mt-2" href="./about.html#why">... read more</a></h2>
-          <p>We're looking to make better our overall quality of life by improving our strength throughout the entire body.<br>Kettlebell Sport blends strength, endurance, balance and coordination. You can build amazing mental tenacity which carries over to other aspects of life.
-          </p>
-        </div>
-
-        <!-- WHO -->
-        <div class="border-left-28kg col-sm-6">
-          <h2>Who we are <a class="h6 float-end mt-2" href="./about.html#who">... read more</a></h2>
-          <p>We are kettlebel enthusiasts who like to come together and push ourselves towards our limits. We have daily jobs and we do not draw profit from each other.</p>
-        </div>
-      </section>
-
-      <!-- Section Separator -->
-      <div class="section-separator"></div>
-
-      <!-- QUOTES section -->
-      <section class="row bg-color-normal3 text-color-light1 m-0 p-3">
-        <h2 class="text-uppercase text-center col-12 py-2 m-0">Others say</h2>
-        <!-- QUOTE 1 -->
-        <div class="col-4 col-sm-3 col-md-2 col-lg-2 py-2 mx-auto">
-          <div class="rounded-circle bg-color-48kg p-2">
-            <!-- picture from Gallery of https://kettlebellsport.eu/ -->
-            <img class="img-fluid rounded-circle my-auto" src="./assets/img/kettlebell-kseniya-dedyukhina.jpg" alt="Kseniya Dedyukhina kettlebell competitor">
-          </div>
-        </div>
-        <figure class="blockquote-reverse col-12 col-sm-9 col-md-4 col-lg-3 m-0 p-2">
-          <!-- quote from https://www.strongfirst.com/from-wheelchair-to-sinister-the-importance-of-mental-strength-by-malou-fehlbaum/ -->
-          <blockquote class="blockquote mt-3 mb-3">The body achieves what the mind believes.</blockquote>
-          <figcaption class="blockquote-footer text-light text-end"><cite>Napoleon Hill</cite></figcaption>
-        </figure>
-        <div class="d-none d-lg-block col-lg-1"></div>
-
-        <!-- QUOTE 2 -->
-        <div class="col-4 col-sm-3 col-md-2 col-lg-2 py-2 mx-auto">
-          <div class="rounded-circle bg-color-16kg p-2">
-            <img class="img-fluid rounded-circle bg-color-light1" src="./assets/img/kettlebell-girya.png" alt="old Russian girya">
-          </div>
-        </div>
-        <figure class="blockquote-reverse col-12 col-sm-9 col-md-4 col-lg-3 m-0 p-2">
-          <!-- quote from https://www.dragondoor.com/assets/1/15/hard-style_fall_2006.pdf -->
-          <blockquote class="blockquote mt-3">Kettlebell has been weeding out weakness from the Russian gene pool for 300 years.</blockquote>
-          <figcaption class="blockquote-footer text-light text-end"><cite>Pavel Tsatsuline</cite></figcaption>
-        </figure>
-        <div class="d-none d-lg-block col-lg-1"></div>
-
-        <!-- QUOTE 3 -->
-        <div class="col-4 col-sm-3 col-md-2 col-lg-2 py-2 mx-auto">
-          <div class="rounded-circle bg-color-44kg p-2">
-            <img class="img-fluid rounded-circle" src="./assets/img/kettlebell-strongman.jpg" alt="Strongman is doing windmill with kettlebell">
-          </div>
-        </div>
-        <figure class="blockquote-reverse col-12 col-sm-9 col-md-4 col-lg-3 m-0 p-2">
-          <!-- quote from https://www.dragondoor.com/assets/1/15/hard-style_fall_2006.pdf -->
-          <blockquote class="blockquote mt-3">Not a single sport develops our muscular strength and bodies as well as kettlebell athletics.</blockquote>
-          <figcaption class="blockquote-footer text-light text-end"><cite>Hercules - Russian magazine, 1913</cite></figcaption>
-        </figure>
-        <div class="d-none d-lg-block col-lg-1"></div>
-
-        <!-- QUOTE 4 -->
-        <div class="col-4 col-sm-3 col-md-2 col-lg-2 py-2 mx-auto">
-          <div class="rounded-circle bg-color-20kg p-2">
-            <!-- picture from https://www.muscleandfitness.hu/edzes/funkcionalis-edzesek/483-a-tek-es-a-kettlebell -->
-            <img class="img-fluid rounded-circle bg-color-light1" src="./assets/img/kettlebell-tek.png" alt="Red kettlebell">
-          </div>
-        </div>
-        <figure class="blockquote-reverse col-12 col-sm-9 col-md-4 col-lg-3 m-0 p-2">
-          <!-- quote from https://www.dragondoor.com/assets/1/15/hard-style_fall_2006.pdf -->
-          <blockquote class="blockquote mt-3">Kettlebell Training...The closest thing you can get to fighting, without throwing a punch</blockquote>
-          <figcaption class="blockquote-footer text-light text-end"><cite>Federal Counterterrorist Operator</cite></figcaption>
-        </figure>
-        <div class="d-none d-lg-block col-lg-1"></div>
-
-      </section>
-
-      <!-- Section Separator -->
-      <div class="section-separator"></div>
-
-      <!-- WHEN MEMBER WHERE section -->
-      <section class="row bg-color-light1 m-0">
-        <div class="row col-12 col-sm-6 m-0 p-0">
-          <!-- When -->
-          <div class="border-left-32kg col-12">
-            <h2>When we train <a class="h6 float-end mt-2" href="./about.html#when">... read more</a></h2>
-            <p>Tuesday 7-8 pm,<br>Thursday 7-8 pm</p>
-          </div>
-
-          <!-- Fee -->
-          <div class="border-left-36kg col-12">
-            <h2>Fees <a class="h6 float-end mt-2" href="./about.html#fee">... read more</a></h2>
-            <p>Train with us for € 8 per session<br>Try out for <span class="rounded-pill bg-color-normal1 px-2">free!</span></p>
-          </div>
-
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-md navbar-dark p-0 fixed-top">
+    <div class="container-fluid p-2 m-0">
+      <a class="navbar-brand nav-logo mx-0 p-0" id="logo-lkc" href="index.html"></a>
+      <a class="navbar-brand mx-2 d-none d-sm-inline" href="index.html">Limerick Kettlebell Club</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Collapsable part -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <!-- Home -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
           <!-- Contact -->
-          <div class="border-left-44kg col-12">
-            <h2>Contact us</h2>
-            <div class="row">
-              <div class="key   col-12          col-sm-4             col-md-12             col-lg-4"            >Phone:</div>
-              <div class="value col-11 offset-1 col-sm-8 offset-sm-0 col-md-11 offset-md-1 col-lg-8 offset-lg-0">+353 83 889 1046</div>
-              <div class="key   col-12          col-sm-4             col-md-12             col-lg-4"            >Email:</div>
-              <div class="value col-11 offset-1 col-sm-8 offset-sm-0 col-md-11 offset-md-1 col-lg-8 offset-lg-0"><a href="mailto:">limerickkettlebellclub@live.ie</a></div>
-            </div>
-           </div>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./about.html#contact">Contact</a>
+          </li>
+          <!-- About -->
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+          <!-- Documents -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Documents
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./safety.html">Safety 101</a></li>
+              <li><a class="dropdown-item" href="./mission.html">Mission Statement</a></li>
+              <li><a class="dropdown-item" href="./constitution.html">Constitution</a></li>
+              <li><a class="dropdown-item" href="./assets/doc/fitness-health-assessment.pdf" target="_blank">Self
+                  Assessment</a></li>
+            </ul>
+          </li>
+        </ul>
+        <a class="btn btn-outline-primary mx-auto" href="./tryout.html">Try Out</a>
+        <a id="logo-aiklf" class="nav-logo float-end" href="./about.html#aiklf"></a>
+        <a id="logo-iukl" class="nav-logo float-end" href="./about.html#iukl"></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER - HERO section -->
+  <header class="hero nav-make-room">
+    <div class="hero-height-top d-flex align-items-center">
+      <h1 class="text-capitalize text-center mx-auto"><strong>Kettlebell is the world’s #1 handheld gym
+          for<wbr> extreme fitness</strong><br>
+        <span class="h6 rounded-pill text-color-light1 bg-color-normal3 p-1 px-2">First session is FREE!</span>
+      </h1>
+    </div>
+    <div class="hero-height-middle d-flex align-items-center">
+      <a class="btn btn-lg bg-color-normal2 text-light text-capitalize mx-auto" href="./tryout.html">Join us!</a>
+    </div>
+    <div class="hero-height-bottom d-flex align-items-center">
+      <h2 class="text-capitalize text-center mx-auto"><strong>Come for the
+          training,<wbr> stay for the community</strong><br>
+        <span class="h6 rounded-pill text-color-light1 bg-color-normal1 p-1 px-2">New members welcome!</span>
+      </h2>
+    </div>
+  </header>
+
+  <main class="container-fluid p-0 m-0">
+
+    <!-- MAIN - WHAT HOW WHY WHO section -->
+    <section class="row bg-color-light1 pt-3 m-0">
+      <!-- WHAT -->
+      <div class="border-left-08kg col-sm-6">
+        <h2>What we do <a class="h6 float-end mt-2" href="./about.html#what">... read more</a></h2>
+        <p>Kettlebell Sport or Girevoy Sport is the traditional Russian sport of kettlebell lifting. Best described as
+          “endurance weightlifting". Kettlebell Sport evolved from athletic and military circles and slowly spread to
+          the wider population.</p>
+      </div>
+
+      <!-- HOW -->
+      <div class="border-left-12kg col-sm-6">
+        <h2>How we do it <a class="h6 float-end mt-2" href="./about.html#how">... read more</a></h2>
+        <p>Our training consists of various types of kettlebell lifts mixed with bodyweight exercises and stretching,
+          all under an hour.</p>
+      </div>
+
+      <!-- WHY -->
+      <div class="border-left-24kg col-sm-6">
+        <h2>Why we train <a class="h6 float-end mt-2" href="./about.html#why">... read more</a></h2>
+        <p>We're looking to make better our overall quality of life by improving our strength throughout the entire
+          body.<br>Kettlebell Sport blends strength, endurance, balance and coordination. You can build amazing mental
+          tenacity which carries over to other aspects of life.
+        </p>
+      </div>
+
+      <!-- WHO -->
+      <div class="border-left-28kg col-sm-6">
+        <h2>Who we are <a class="h6 float-end mt-2" href="./about.html#who">... read more</a></h2>
+        <p>We are kettlebel enthusiasts who like to come together and push ourselves towards our limits. We have daily
+          jobs and we do not draw profit from each other.</p>
+      </div>
+    </section>
+
+    <!-- Section Separator -->
+    <div class="section-separator"></div>
+
+    <!-- QUOTES section -->
+    <section class="row bg-color-normal3 text-color-light1 m-0 p-3">
+      <h2 class="text-uppercase text-center col-12 py-2 m-0">Others say</h2>
+      <!-- QUOTE 1 -->
+      <div class="col-4 col-sm-3 col-md-2 col-lg-2 py-2 mx-auto">
+        <div class="rounded-circle bg-color-48kg p-2">
+          <!-- picture from Gallery of https://kettlebellsport.eu/ -->
+          <img class="img-fluid rounded-circle my-auto" src="./assets/img/kettlebell-kseniya-dedyukhina.jpg"
+            alt="Kseniya Dedyukhina kettlebell competitor">
+        </div>
+      </div>
+      <figure class="blockquote-reverse col-12 col-sm-9 col-md-4 col-lg-3 m-0 p-2">
+        <!-- quote from https://www.strongfirst.com/from-wheelchair-to-sinister-the-importance-of-mental-strength-by-malou-fehlbaum/ -->
+        <blockquote class="blockquote mt-3 mb-3">The body achieves what the mind believes.</blockquote>
+        <figcaption class="blockquote-footer text-light text-end"><cite>Napoleon Hill</cite></figcaption>
+      </figure>
+      <div class="d-none d-lg-block col-lg-1"></div>
+
+      <!-- QUOTE 2 -->
+      <div class="col-4 col-sm-3 col-md-2 col-lg-2 py-2 mx-auto">
+        <div class="rounded-circle bg-color-16kg p-2">
+          <img class="img-fluid rounded-circle bg-color-light1" src="./assets/img/kettlebell-girya.png"
+            alt="old Russian girya">
+        </div>
+      </div>
+      <figure class="blockquote-reverse col-12 col-sm-9 col-md-4 col-lg-3 m-0 p-2">
+        <!-- quote from https://www.dragondoor.com/assets/1/15/hard-style_fall_2006.pdf -->
+        <blockquote class="blockquote mt-3">Kettlebell has been weeding out weakness from the Russian gene pool for 300
+          years.</blockquote>
+        <figcaption class="blockquote-footer text-light text-end"><cite>Pavel Tsatsuline</cite></figcaption>
+      </figure>
+      <div class="d-none d-lg-block col-lg-1"></div>
+
+      <!-- QUOTE 3 -->
+      <div class="col-4 col-sm-3 col-md-2 col-lg-2 py-2 mx-auto">
+        <div class="rounded-circle bg-color-44kg p-2">
+          <img class="img-fluid rounded-circle" src="./assets/img/kettlebell-strongman.jpg"
+            alt="Strongman is doing windmill with kettlebell">
+        </div>
+      </div>
+      <figure class="blockquote-reverse col-12 col-sm-9 col-md-4 col-lg-3 m-0 p-2">
+        <!-- quote from https://www.dragondoor.com/assets/1/15/hard-style_fall_2006.pdf -->
+        <blockquote class="blockquote mt-3">Not a single sport develops our muscular strength and bodies as well as
+          kettlebell athletics.</blockquote>
+        <figcaption class="blockquote-footer text-light text-end"><cite>Hercules - Russian magazine, 1913</cite>
+        </figcaption>
+      </figure>
+      <div class="d-none d-lg-block col-lg-1"></div>
+
+      <!-- QUOTE 4 -->
+      <div class="col-4 col-sm-3 col-md-2 col-lg-2 py-2 mx-auto">
+        <div class="rounded-circle bg-color-20kg p-2">
+          <!-- picture from https://www.muscleandfitness.hu/edzes/funkcionalis-edzesek/483-a-tek-es-a-kettlebell -->
+          <img class="img-fluid rounded-circle bg-color-light1" src="./assets/img/kettlebell-tek.png"
+            alt="Red kettlebell">
+        </div>
+      </div>
+      <figure class="blockquote-reverse col-12 col-sm-9 col-md-4 col-lg-3 m-0 p-2">
+        <!-- quote from https://www.dragondoor.com/assets/1/15/hard-style_fall_2006.pdf -->
+        <blockquote class="blockquote mt-3">Kettlebell Training...The closest thing you can get to fighting, without
+          throwing a punch</blockquote>
+        <figcaption class="blockquote-footer text-light text-end"><cite>Federal Counterterrorist Operator</cite>
+        </figcaption>
+      </figure>
+      <div class="d-none d-lg-block col-lg-1"></div>
+
+    </section>
+
+    <!-- Section Separator -->
+    <div class="section-separator"></div>
+
+    <!-- WHEN MEMBER WHERE section -->
+    <section class="row bg-color-light1 m-0">
+      <div class="row col-12 col-sm-6 m-0 p-0">
+        <!-- When -->
+        <div class="border-left-32kg col-12">
+          <h2>When we train <a class="h6 float-end mt-2" href="./about.html#when">... read more</a></h2>
+          <p>Tuesday 7-8 pm,<br>Thursday 7-8 pm</p>
         </div>
 
-        <!-- Where -->
-        <div class="border-left-48kg col-sm-6">
-          <h2>Where we are <a class="h6 float-end mt-2" href="./about.html#where">... read more</a></h2>          
-          <!-- the following <iframe> element was copied from https://www.deltasportsdome.com/ -->     
-          <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9682.897964425805!2d-8.5848071!3d52.6468904!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x15a56d2aa8bc23d0!2sDelta%20Sports%20Dome!5e0!3m2!1sen!2sch!4v1576249477857!5m2!1sen!2sch" allowfullscreen=""></iframe>
+        <!-- Fee -->
+        <div class="border-left-36kg col-12">
+          <h2>Fees <a class="h6 float-end mt-2" href="./about.html#fee">... read more</a></h2>
+          <p>Train with us for € 8 per session<br>Try out for <span
+              class="rounded-pill bg-color-normal1 px-2">free!</span></p>
         </div>
-      </section>
-    </main>
 
-    <footer class="bg-color-dark1 text-color-light1 m-0">
-      <ul class="list-inline text-center m-0 py-3 px-5">
-        <!-- Phone -->
-        <li class="list-inline-item float-start">
-          <a href="callto:+353838891046">
-             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-            </svg>
-           </a>
-        </li>
-        <!-- Email -->
-        <li class="list-inline-item">
-            <a href="mailto:limerickkettlebellclub@live.ie">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-              <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
-            </svg>
-          </a>
-        </li>
-        <!-- Social media -->
-        <li class="list-inline-item float-end">
-          <a href="https://www.facebook.com/Limerick-Kettlebell-Club-201978196542853" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </footer>
+        <!-- Contact -->
+        <div class="border-left-44kg col-12">
+          <h2>Contact us</h2>
+          <div class="row">
+            <div class="key   col-12          col-sm-4             col-md-12             col-lg-4">Phone:</div>
+            <div class="value col-11 offset-1 col-sm-8 offset-sm-0 col-md-11 offset-md-1 col-lg-8 offset-lg-0">+353 83
+              889 1046</div>
+            <div class="key   col-12          col-sm-4             col-md-12             col-lg-4">Email:</div>
+            <div class="value col-11 offset-1 col-sm-8 offset-sm-0 col-md-11 offset-md-1 col-lg-8 offset-lg-0"><a
+                href="mailto:">limerickkettlebellclub@live.ie</a></div>
+          </div>
+        </div>
+      </div>
 
-    <!-- Optional JavaScript; choose one of the two! -->
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script> -->
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-   
-  </body>
+      <!-- Where -->
+      <div class="border-left-48kg col-sm-6">
+        <h2>Where we are <a class="h6 float-end mt-2" href="./about.html#where">... read more</a></h2>
+        <!-- the following <iframe> element was copied from https://www.deltasportsdome.com/ -->
+        <iframe class="gmap"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9682.897964425805!2d-8.5848071!3d52.6468904!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x15a56d2aa8bc23d0!2sDelta%20Sports%20Dome!5e0!3m2!1sen!2sch!4v1576249477857!5m2!1sen!2sch"
+          allowfullscreen=""></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-color-dark1 text-color-light1 m-0">
+    <ul class="list-inline text-center m-0 py-3 px-5">
+      <!-- Phone -->
+      <li class="list-inline-item float-start">
+        <a href="callto:+353838891046">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+          </svg>
+        </a>
+      </li>
+      <!-- Email -->
+      <li class="list-inline-item">
+        <a href="mailto:limerickkettlebellclub@live.ie">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+            <path
+              d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+          </svg>
+        </a>
+      </li>
+      <!-- Social media -->
+      <li class="list-inline-item float-end">
+        <a href="https://www.facebook.com/Limerick-Kettlebell-Club-201978196542853" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+            <path
+              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
