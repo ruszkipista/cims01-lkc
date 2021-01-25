@@ -1,4 +1,4 @@
-# Limerick Kettlebell Lifting Club
+# [Limerick Kettlebell Lifting Club](https://ruszkipista.github.io/cims01-lkc/)
 
 Static website to promote the [Limerick Kettlebell Club](https://www.facebook.com/Limerick-Kettlebell-Club-201978196542853) and [Kettlebell Sport](https://en.wikipedia.org/wiki/Kettlebell_lifting) around Limerick city, Ireland. This project is the first milestone in obtaining a [Full Stack Web Development](https://codeinstitute.net/full-stack-software-development-diploma/) diploma from [Code Institute](https://codeinstitute.net/)
 
@@ -11,9 +11,10 @@ I kept a journal during the development about my daily activities, see it [here]
 - [1. UX design](#1-ux-design "1. UX design")
   - [1.1 Strategy Plane](#11-strategy-plane "1.1 Strategy Plane")
   - [1.2 Scope plane](#12-scope-plane "1.2 Scope plane")
-  - [1.3 Structure plane](#13-structure-plane "1.3 Structure plane")
-  - [1.4 Skeleton plane](#14-skeleton-plane "1.4 Skeleton plane")
-  - [1.5 Surface plane](#15-surface-plane "1.5 Surface plane")
+  - [1.3 User Stories](#13-user-stories "1.3 User Stories")
+  - [1.4 Structure plane](#14-structure-plane "1.4 Structure plane")
+  - [1.5 Skeleton plane](#15-skeleton-plane "1.5 Skeleton plane")
+  - [1.6 Surface plane](#16-surface-plane "1.6 Surface plane")
 - [2. Features Left to Implement](#2-features-left-to-implement "2. Features Left to Implement")
 - [3. Technologies and Tools Used](#3-technologies-and-tools-used "3. Technologies and Tools Used")
 - [4. Issues solved during development](#4-issues-solved-during-development "4. Issues solved during development")
@@ -84,7 +85,9 @@ The following table lists the planned features, each feature referenced with ori
 |F16|G3, G6, G14|explain membership|
 |F20|G10|display an event/training calendar, allow members to sign up/off|
 
-### 1.3 Structure plane
+### 1.3 User Stories
+
+### 1.4 Structure plane
 The structure of the website to be built consist of
 - a **Home** page with short leads - all pointing to longer descriptions on the About page,
 - a long **About** page receiving traffic from the landing page with many sections with bookmark navigation, end of all sections refer back to **Home** with link
@@ -98,7 +101,7 @@ The structure of the website to be built consist of
 
 ![pages with navigation links](./assets/doc/ci-ms1-site-structure.jpg "Website structure")
 
-### 1.4 Skeleton plane
+### 1.5 Skeleton plane
 Feature list in page/section structure with content hinting and navigation links. The following table is a sample, describes the page **TryOut**. Check out the whole list [here](./assets/doc/ci-ms1-features.pdf) in PDF format.
 
 |Page / *section*|Feature#|Feature / Content description|Link or Action|
@@ -113,7 +116,7 @@ Feature list in page/section structure with content hinting and navigation links
 Created wireframes for **TryOut** page in 3 width, see the others as well [here](./assets/doc/ci-ms1-wireframes.pdf) or the balsamiq file [here](./assets/doc/ci-ms1-wireframes.bmpr).
 ![TryOut page](./assets/doc/ci-ms1-wireframe-tryout.png "TryOut page")
 
-### 1.5 Surface plane
+### 1.6 Surface plane
 Used the website coolors.co to come up with base colors for styling:
 ![base colors](./assets/doc/color-palette.gif "Base colors")
 Also decided that for secondary colors will use kettlebell weight color codes. See this image for sample of those colors:
