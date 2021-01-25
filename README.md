@@ -282,9 +282,9 @@ And there is a table row with values (applicantname, <entered value of “Your n
 And there is a table row with values (applicantemail, <entered value of “Your email” field> OR empty)
 And there is a table row with values (applicantstory, <entered value of “Tell us about yourself” field>)
 ```
-|Test no.|Pre-condition|Event|Expected Action|Result|Comment|
+|Test no.|Pre-condition|Event|Expected|Result|Comment|
 |-|-|-|-|-|-|
-|151|TryOut page is open|- Scroll to the section "Heads Up!"<br>- Enter "Visitor" into form field “Your name”,<br>- Enter "visitor@gmail.com" into field "Your email"<br>- Enter "hello" into field “Tell us about yourself”<br>- Click on button "Send"|new page opens in a separate browser tab with a table of (Input Name, Value)<br>(applicantname, Visitor)<br>applicantemail, visitor@gmail.com)<br>(applicantstory, hello)|pass|-|
+|151|TryOut page is open|- Scroll to the section "Heads Up!"<br>- Enter "Visitor" into form field “Your name”,<br>- Enter "visitor@gmail.com" into field "Your email"<br>- Enter "hello" into field “Tell us about yourself”<br>- Click on button "Send"|new page opens in a separate browser tab with a table of<br>(Input Name, Value)<br>(applicantname, Visitor)<br>(applicantemail, visitor@gmail.com)<br>(applicantstory, hello)|pass|-|
 
 The website performs on desktop and mobile devices as intended, no responsivity issues were found.
 
