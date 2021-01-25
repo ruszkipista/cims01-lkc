@@ -267,9 +267,14 @@ The whole testing were condusted manually.
 Here is a sample from the test log, see the complete document [here](./assets/doc/ci-ms1-testing.pdf)
 
 ```
+Background: 
+Desktop device is a desktop Windows 7 operating system running Chrome (on 1920x1080 pixels screen) and Firefox browser (on 1600x1200 pixels screen)
+Mobile device is a OnePlus2 mobile phone running OxigenOS 3.6.1 (eq. Android 6.0.1) and Chrome Mobile browser on screen resolution 1080x1920 pixels
+
 Scenario: visitor is interested in joining a training session
-And may provides a valid email address OR may not
+And may provide a valid email address OR may not
 And provides a personal message
+Goal: G3 - attracting new members AND G16 - learn what to expect on the first training
 Given visitor is on the TryOut page
 When scrolls to the HeadsUp section to the form with 3 fields and Send button
 And enters something into “Your name” field
@@ -284,7 +289,7 @@ And there is a table row with values (applicantstory, <entered value of “Tell 
 ```
 |Test no.|Pre-condition|Event|Expected|Result|Comment|
 |-|-|-|-|-|-|
-|151|TryOut page is open|- Scroll to the section "Heads Up!"<br>- Enter "Visitor" into form field “Your name”,<br>- Enter "visitor@gmail.com" into field "Your email"<br>- Enter "hello" into field “Tell us about yourself”<br>- Click on button "Send"|new page opens in a separate browser tab with a table of<br>(Input Name, Value)<br>(applicantname, Visitor)<br>(applicantemail, visitor@gmail.com)<br>(applicantstory, hello)|pass|-|
+|1|on Desktop Chrome, TryOut page is open|- Scroll to the section "Heads Up!"<br>- Enter "Visitor" into form field “Your name”,<br>- Enter "visitor@gmail.com" into field "Your email"<br>- Enter "hello" into field “Tell us about yourself”<br>- Click on button "Send"|new page opens in a separate browser tab with a table of<br>(Input Name, Value)<br>(applicantname, Visitor)<br>(applicantemail, visitor@gmail.com)<br>(applicantstory, hello)|pass|-|
 
 The website performs on desktop and mobile devices as intended, no responsivity issues were found.
 
