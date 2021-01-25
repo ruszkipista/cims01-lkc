@@ -262,7 +262,7 @@ And used the variable `--vh89` in the `style.css`:
 
 First step in testing was the validation of HTML and CSS code with [Markup Validation Service](https://validator.w3.org/) and [CSS Validation Service](https://jigsaw.w3.org/css-validator/) respectively. I did the validations a couple of times during development and once at the end. Now all 6 html pages validate to "Document checking completed. No errors or warnings to show.". The `style.css` file validates to "Congratulations! No Error Found."
 
-The whole testing were condusted manually.
+The whole testing were conducted manually.
 
 Here is a sample from the test log, see the complete document [here](./assets/doc/ci-ms1-testing.pdf)
 
@@ -315,7 +315,7 @@ The text built into the pages came from the following sources:
   - www.giri-iukl.com/en/
   - www.kettlebellkings.com
   - www.dragondoor.com
-  - breakingmuscle.co.uk
+  - www.breakingmuscle.co.uk
 - fitness self assessment form is from https://www.sampleforms.com/fitness-assessment-form.html
 - the TryOut page is my own writing (except the "Training session", that is from Nancy)
 
