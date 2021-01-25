@@ -301,7 +301,18 @@ No additional bugs were discovered during the final testing.
 ## 6. Deployment
 
 The website is deployed to GitHub Pages automatically by GitHub. The assigned web address is [ruszkipista.github.io/cims01-lkc/](https://ruszkipista.github.io/cims01-lkc/).
-Once you host your project files on GitHub and you setup the deployment to GitHub Pages via <repository>/settings/GitHub Pages, then GitHub will copy your files to a webserver every occasion you submit a commit or modify a file. You do not need to do anything to actualize the content of your website.
+I followed [this](https://docs.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) tutorial to deploy the project on GitHub Pages, these were the steps:
+1. On GitHub navigate to the repository's main page
+2. Under your repository name, click Settings
+![Repository/Settings](./assets/doc/ci-ms1-deployment-1.png "Click on Settings")
+3. Under "GitHub Pages", use the None or Branch drop-down menu and select a publishing source
+![Settings/GitHub Pages/Branch](./assets/doc/ci-ms1-deployment-2.png "Click on Branch")
+4. Optionally, use the drop-down menu to select a folder for your publishing source
+![Settings/GitHub Pages/Source](./assets/doc/ci-ms1-deployment-3.png "Click on Root")
+5. Click Save
+![Settings/GitHub Pages/Save](./assets/doc/ci-ms1-deployment-4.png "Click on Save")
+6. After a while you are presented whith this status message at the same place
+![Settings/GitHub Pages](./assets/doc/ci-ms1-deployment-5.png "Your site is published")
 
 If you want to deploy this project to a different hosting solution, you need to copy all the files from this repository into the home folder of the webserver, keeping the folder structure as is.
 
