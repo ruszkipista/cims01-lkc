@@ -171,14 +171,21 @@ h1, h2, h3, h4, h5, h6 {
     background-repeat: no-repeat;
 }
  /* animate the section separator */
-.section-separator:hover {
-    animation-name: separator-zoom;
-    animation-duration: 0.5s;
+ .section-separator:hover {
+    -webkit-animation-name: separator-zoom;
+            animation-name: separator-zoom;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
 }
-@keyframes separator-zoom{
-      0%  { background-position: 35%, 38%, 41%, 44%, 47%, 50%, 53%, 56%, 59%,  62%, 65%;}
-     50%  { background-position:  5%, 14%, 23%, 32%, 41%, 50%, 59%, 68%, 77%,  86%, 95%;}
-    100%  { background-position: 35%, 38%, 41%, 44%, 47%, 50%, 53%, 56%, 59%,  62%, 65%;}
+@keyframes separator-zoom {
+      0%  { background-position: 35%, 38%, 41%, 44%, 47%, 50%, 53%, 56%, 59%, 62%, 65%;}
+     50%  { background-position:  5%, 14%, 23%, 32%, 41%, 50%, 59%, 68%, 77%, 86%, 95%;}
+    100%  { background-position: 35%, 38%, 41%, 44%, 47%, 50%, 53%, 56%, 59%, 62%, 65%;}
+}
+@-webkit-keyframes separator-zoom{
+      0%  { background-position: 35%, 38%, 41%, 44%, 47%, 50%, 53%, 56%, 59%, 62%, 65%;}
+     50%  { background-position:  5%, 14%, 23%, 32%, 41%, 50%, 59%, 68%, 77%, 86%, 95%;}
+    100%  { background-position: 35%, 38%, 41%, 44%, 47%, 50%, 53%, 56%, 59%, 62%, 65%;}
 }
  /* <iframe> of google map */
  .gmap {
