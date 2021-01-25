@@ -71,11 +71,13 @@ h1, h2, h3, h4, h5, h6 {
 .btn-outline-primary {
     color: var(--color-dark1);
     background-color: var(--color-light1);
+    border-color: var(--color-light1);
     height: var(--nav-logo-height);
 }
 .btn-outline-primary:hover {
     color: var(--color-light1);
     background-color: var(--color-dark1);
+    border-color: var(--color-light1);
 }
 .nav-logo {
     width:  var(--nav-logo-width);
@@ -206,6 +208,18 @@ footer svg {
 #img-venue {
     /* picture from https://www.deltasportsdome.com/wp-content/uploads/2019/12/Delta-Sidebar-Portrait.jpg */
     background: url(../img/delta-entrance.jpg) center center / cover no-repeat;;
+}
+
+/* TRYOUT.html */
+.btn-outline-success {
+    color: var(--color-dark1);
+    background-color: var(--color-light1);
+    border-color: var(--color-dark1);
+}
+.btn-outline-success:hover {
+    color: var(--color-light1);
+    background-color: var(--color-dark1);
+    border-color: var(--color-light1);
 }
 
 /* MISSION.html, CONSTITUTION.html */
