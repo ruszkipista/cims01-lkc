@@ -144,6 +144,7 @@ Chose font [Roboto](https://fonts.google.com/specimen/Roboto) for the headers.
 - Generated one image (on top of this Readme) of how the website looks on different size devices with [Am I Responsive](http://ami.responsivedesign.is/)
 - Played with colors on [coolors](https://coolors.co/), chose the base colors with it
 - Chose font using [Google Fonts](https://fonts.google.com/)
+- run CSS code through [Autoprefixer CSS online](https://autoprefixer.github.io/) to supplement suggested vendor prefixes
 - Searched the internet to find content, documentation and solution for issues using [Google](www.google.com)'s search service.
 - connected to the internet using [Vodafone](https://n.vodafone.ie/shop/broadband.html)'s broadband service.
 
@@ -261,21 +262,33 @@ And used the variable `--vh89` in the `style.css`:
 
 First step in testing was the validation of HTML and CSS code with [Markup Validation Service](https://validator.w3.org/) and [CSS Validation Service](https://jigsaw.w3.org/css-validator/) respectively. I did the validations a couple of times during development and once at the end. Now all 6 html pages validate to "Document checking completed. No errors or warnings to show.". The `style.css` file validates to "Congratulations! No Error Found."
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+The whole testing were condusted manually.
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
+Here is a sample from the test log, see the complete document [here](./assets/doc/ci-ms1-testing.pdf)
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+```
+Scenario: visitor is interested in joining a training session
+And may provides a valid email address OR may not
+And provides a personal message
+Given visitor is on the TryOut page
+When scrolls to the HeadsUp section to the form with 3 fields and Send button
+And enters something into “Your name” field
+And enters a valid email address into “Your email” field OR leaves it empty
+And enters something into “Tell us about yourself” field
+And clicks on the Send button
+Then the form is sent
+And new page opens in a separate browser tab with a table of two columns of sent data: (“Input Name”, “Value”)
+And there is a table row with values (applicantname, <entered value of “Your name” field>)
+And there is a table row with values (applicantemail, <entered value of “Your email” field> OR empty)
+And there is a table row with values (applicantstory, <entered value of “Tell us about yourself” field>)
+```
+|Test no.|Pre-condition|Event|Expected Action|Result|Comment|
+|-|-|-|-|-|-|
+|151|TryOut page is open|- Scroll to the section "Heads Up!"<br>- Enter "Visitor" into form field “Your name”,<br>- Enter "visitor@gmail.com" into field "Your email"<br>- Enter "hello" into field “Tell us about yourself”<br>- Click on button "Send"|new page opens in a separate browser tab with a table of (Input Name, Value)<br>(applicantname, Visitor)<br>applicantemail, visitor@gmail.com)<br>(applicantstory, hello)|pass|-|
 
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
+The website performs on desktop and mobile devices as intended, no responsivity issues were found.
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+No additional bugs were discovered during the final testing.
 
 ## 6. Deployment
 
