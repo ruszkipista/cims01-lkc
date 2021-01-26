@@ -86,6 +86,13 @@ The following table lists the planned features, each feature referenced with ori
 |F20|G10|display an event/training calendar, allow members to sign up/off|
 
 ### 1.3 User Stories
+* As a club coach I want to make available all information that I think needs to be known before a new joiner enters the gym, so I can spare time on explaining things on the first occasion or in emails.
+* As a club coach I want to make available a Fitness Self Assessment form to receive it filled from the joiner, so I can train the new joiner more on the first occasion.
+* As a website visitor with intent of starting training, I want to access all relevant information on one website about kettlebell training with the club so I could join training without raising any further questions.
+* As a website visitor with intent on joining my first training with the club, I want to announce my arrival, so they know my name, my background and they will expect me.
+* As a club member I want to access news articles about upcoming and past club related events, so I can be well informed
+* As a club officer I want to make club governance documents available to the public so they are accessible by anyone and any time without extra effort by the club.
+* As a club officer I want to make clear the club’s national and international affiliation so new joiners can expect quality training.
 
 ### 1.4 Structure plane
 The structure of the website to be built consist of
@@ -274,10 +281,12 @@ Background:
 Desktop device is a desktop Windows 7 operating system running Chrome (on 1920x1080 pixels screen) and Firefox browser (on 1600x1200 pixels screen)
 Mobile device is a OnePlus2 mobile phone running OxigenOS 3.6.1 (eq. Android 6.0.1) and Chrome Mobile browser on screen resolution 1080x1920 pixels
 
+User Story:
+As a website visitor with intent on joining my first training with the club, I want to announce my arrival, so they know my name, my background and they will expect me.
+
 Scenario: visitor is interested in joining a training session
 And may provide a valid email address OR may not
 And provides a personal message
-Goal: G3 - attracting new members AND G16 - learn what to expect on the first training
 Given visitor is on the TryOut page
 When scrolls to the HeadsUp section to the form with 3 fields and Send button
 And enters something into “Your name” field
