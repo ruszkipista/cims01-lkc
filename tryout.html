@@ -18,8 +18,10 @@
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-md navbar-dark p-0 fixed-top">
     <div class="container-fluid p-2 m-0">
-      <a class="navbar-brand nav-logo mx-0 p-0" id="logo-lkc" href="index.html"></a>
-      <a class="navbar-brand mx-2 d-none d-sm-inline" href="index.html">Limerick Kettlebell Club</a>
+      <a class="navbar-brand nav-logo mx-0 p-0" id="logo-lkc" href="index.html"
+        aria-label="Go to the top of Home page"></a>
+      <a class="navbar-brand mx-2 d-none d-sm-inline" href="index.html" aria-label="Go to the top of Home page">Limerick
+        Kettlebell Club</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -29,34 +31,40 @@
         <ul class="navbar-nav mx-auto">
           <!-- Home -->
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+            <a class="nav-link" href="./index.html" aria-label="Go to the top of Home page">Home</a>
           </li>
           <!-- Contact -->
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="./about.html#contact">Contact</a>
+            <a class="nav-link" href="./about.html#contact"
+              aria-label="Go to the Contact section on About page">Contact</a>
           </li>
           <!-- About -->
           <li class="nav-item">
-            <a class="nav-link" href="./about.html">About</a>
+            <a class="nav-link" href="./about.html" aria-label="Go to the top of About page">About</a>
           </li>
           <!-- Documents -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
+              aria-expanded="false" aria-label="Open submenu of Documents">
               Documents
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="./safety.html">Safety 101</a></li>
-              <li><a class="dropdown-item" href="./mission.html">Mission Statement</a></li>
-              <li><a class="dropdown-item" href="./constitution.html">Constitution</a></li>
-              <li><a class="dropdown-item" href="./assets/doc/fitness-health-assessment.pdf" target="_blank">Self
-                  Assessment</a></li>
+              <li><a class="dropdown-item" href="./safety.html" aria-label="Go to the Safety 101 page">Safety 101</a>
+              </li>
+              <li><a class="dropdown-item" href="./mission.html" aria-label="Go to the Mission Statement page">Mission
+                  Statement</a></li>
+              <li><a class="dropdown-item" href="./constitution.html"
+                  aria-label="Go to the Constitution page">Constitution</a></li>
+              <li><a class="dropdown-item" href="./assets/doc/fitness-health-assessment.pdf" target="_blank"
+                  aria-label="Download Fitness Self Assessment form">Self Assessment</a></li>
             </ul>
           </li>
         </ul>
-        <a class="btn btn-outline-primary mx-auto" href="./tryout.html">Try Out</a>
-        <a id="logo-aiklf" class="nav-logo float-end" href="./about.html#aiklf"></a>
-        <a id="logo-iukl" class="nav-logo float-end" href="./about.html#iukl"></a>
+        <a class="btn btn-outline-primary mx-auto" href="./tryout.html" aria-label="Go to the Try Out page">Try Out</a>
+        <a id="logo-aiklf" class="nav-logo float-end" href="./about.html#aiklf"
+          aria-label="Go to the AIKLF section of About page"></a>
+        <a id="logo-iukl" class="nav-logo float-end" href="./about.html#iukl"
+          aria-label="Go to the IUKL section of About page"></a>
       </div>
     </div>
   </nav>
@@ -116,7 +124,8 @@
             with us.
             Please print it at home, fill it and bring it with you. If you can't print it, we will give it
             you when we meet.</p>
-          <p>You can download the form <a href="./assets/doc/fitness-health-assessment.pdf" target="_blank">here</a>.
+          <p>You can download the form <a href="./assets/doc/fitness-health-assessment.pdf" target="_blank"
+              aria-label="Download Fitness Self Assessment form">here</a>.
           </p>
         </li>
 
@@ -127,20 +136,24 @@
           <!-- HEADS UP FORM -->
           <form class="text-center col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3"
             action="https://formdump.codeinstitute.net" target='_blank' method="POST">
-            <input class="form-control" type="text" name="applicantname" placeholder="Your name" required>
-            <input class="form-control" type="email" name="applicantemail" placeholder="Your email">
+            <input class="form-control" type="text" name="applicantname" placeholder="Your name"
+              aria-label="Enter your name" required>
+            <input class="form-control" type="email" name="applicantemail" placeholder="Your email"
+              aria-label="Enter your email address">
             <textarea class="form-control" rows="5" name="applicantstory" placeholder="Tell us about yourself"
-              required></textarea>
-            <button type="submit" class="btn btn-outline-success my-2">Send</button>
+              aria-label="Enter a message to the coach" required></textarea>
+            <button type="submit" class="btn btn-outline-success my-2"
+              aria-label="Submit form with name, email and message">Send</button>
           </form>
         </li>
 
         <li>
           <p>Enter The Kettlebell by Pavel Tsatsuline</p>
           <p>If you have time, you can go even further in preparation, watch this video. If you have not, just read the
-            <a href="./safety.html">Kettlebell Safety 101</a>.</p>
+            <a href="./safety.html">Kettlebell Safety 101</a>.
+          </p>
           <div class="embed-responsive embed-responsive-16by9 text-center">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cKx8xE8jJZs?rel=0"
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cKx8xE8jJZs?rel=0" aria-label="Play embedded video Enter the kettlebell"
               allowfullscreen></iframe>
           </div>
         </li>

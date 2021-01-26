@@ -2,79 +2,124 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="./assets/img/logo-lkc-96x96.png" type="image/x-icon">
-    <meta name="description" content="Join the Limerick Kettlebell Lifting Club for training and community!">
-    <meta name="keywords"    content="kettlebell, training, limerick, kettlebell sport, girja">
-    <meta name="author"      content="ruszkipista">
-    <title>LKC | Safety 101</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="./assets/img/logo-lkc-96x96.png" type="image/x-icon">
+  <meta name="description" content="Join the Limerick Kettlebell Lifting Club for training and community!">
+  <meta name="keywords" content="kettlebell, training, limerick, kettlebell sport, girja">
+  <meta name="author" content="ruszkipista">
+  <title>LKC | Safety 101</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
 </head>
 
 <body class="container">
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-md navbar-dark p-0 fixed-top">
-        <div class="container-fluid p-2 m-0">
-          <a class="navbar-brand nav-logo mx-0 p-0" id="logo-lkc" href="index.html"></a>
-          <a class="navbar-brand mx-2 d-none d-sm-inline" href="index.html">Limerick Kettlebell Club</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- Collapsable part -->
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto">
-              <!-- Home -->
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-md navbar-dark p-0 fixed-top">
+    <div class="container-fluid p-2 m-0">
+      <a class="navbar-brand nav-logo mx-0 p-0" id="logo-lkc" href="index.html"
+        aria-label="Go to the top of Home page"></a>
+      <a class="navbar-brand mx-2 d-none d-sm-inline" href="index.html" aria-label="Go to the top of Home page">Limerick
+        Kettlebell Club</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Collapsable part -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <!-- Home -->
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html" aria-label="Go to the top of Home page">Home</a>
+          </li>
+          <!-- Contact -->
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html#contact"
+              aria-label="Go to the Contact section on About page">Contact</a>
+          </li>
+          <!-- About -->
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html" aria-label="Go to the top of About page">About</a>
+          </li>
+          <!-- Documents -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false" aria-label="Open submenu of Documents">
+              Documents
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item active" href="./safety.html" aria-current="page"
+                  aria-label="Go to the Safety 101 page">Safety 101</a>
               </li>
-              <!-- Contact -->
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./about.html#contact">Contact</a>
-              </li>
-              <!-- About -->
-              <li class="nav-item">
-                <a class="nav-link" href="./about.html">About</a>
-              </li>
-              <!-- Documents -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Documents
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="./safety.html">Safety 101</a></li>
-                  <li><a class="dropdown-item" href="./mission.html">Mission Statement</a></li>
-                  <li><a class="dropdown-item" href="./constitution.html">Constitution</a></li>
-                  <li><a class="dropdown-item" href="./assets/doc/fitness-health-assessment.pdf" target="_blank">Self Assessment</a></li>
-                </ul>
-              </li>
+              <li><a class="dropdown-item" href="./mission.html" aria-label="Go to the Mission Statement page">Mission Statement</a></li>
+              <li><a class="dropdown-item" href="./constitution.html"
+                  aria-label="Go to the Constitution page">Constitution</a></li>
+              <li><a class="dropdown-item" href="./assets/doc/fitness-health-assessment.pdf" target="_blank"
+                  aria-label="Download Fitness Self Assessment form">Self Assessment</a></li>
             </ul>
-            <a class="btn btn-outline-primary mx-auto" href="./tryout.html">Try Out</a>
-            <a id="logo-aiklf" class="nav-logo float-end" href="./about.html#aiklf"></a>
-            <a id="logo-iukl"  class="nav-logo float-end" href="./about.html#iukl"></a>
-          </div>
-        </div>
-    </nav>
+          </li>
+        </ul>
+        <a class="btn btn-outline-primary mx-auto" href="./tryout.html" aria-label="Go to the Try Out page">Try Out</a>
+        <a id="logo-aiklf" class="nav-logo float-end" href="./about.html#aiklf"
+          aria-label="Go to the AIKLF section of About page"></a>
+        <a id="logo-iukl" class="nav-logo float-end" href="./about.html#iukl"
+          aria-label="Go to the IUKL section of About page"></a>
+      </div>
+    </div>
+  </nav>
 
-    <main class="row nav-make-room">
-        <article class="col-12 offset-md-2 col-md-8">
-            <h1 class="border-bottom-32kg pt-3 text-center">Kettlebel Safety 101:<br><span class="h2">"It is your fault"</span></h1>
-            <p class="text-center">by Pavel Tstsuline in <a href="https://www.youtube.com/embed/cKx8xE8jJZs" target="_blank">Enter The Kettlebell</a></p>
-            <ul>
-                <li><p>Before starting training check with the doctor first, an orthopedist and a cardiologist. Kettlebell training can be exceptionally intense.</p></li>
-                <li><p>Always be aware of your surroundings. Train on a flat surface on which you can drop the kettlebell without worrying about it. Make sure, your line of fire is clear. If your kettlebell slips out of your hand, in the worst case scenario, it does not hit anybody or breaks something. Always be aware where the sun is. Be aware!</p></li>
-                <li><p>Wear flat sole shoes (no sneakers with cushion) or go barefoot. Recommended shoes: converse, chuck taylors, wrestling shoes, etc.</p></li>
-                <li><p>Never contest for space with the kettlebell. If the kettlebell wants to fall, get out of the way, do not fight it, let it go. Always remember: quick feet are happy feet!</p></li>
-                <li><p>Practice all safety measures at all times, even with very light kettlebell. Always pose the question for yourself: would I be willing to do this with a 48kg kettlebell? If the answer is no, then don’t do that. Mentally stay with the set until you release the kettlebell. At the last rep lower the kettlebell as you plan to do another rep, then set the kettlebell down. Only then you may relax.</p></li>
-                <li><p>Keep moving once your heart rate is high. When you've done a really hard set of swings or snaches do not just collapse to the ground, but keep moving! Walk, jug, shadowbox, it is going to make it easier on your heart.</p></li>
-                <li><p>Build up the training load gradually using common sense and listen to your body. Do not follow a workout blindly if you are just learning the movement or you are not strong enough yet. While you are at it, practice other exercises to gain strength and endurance. You MUST listen to your body!</p></li>
-                <li><p>Instruction can’t cover all contingencies. There is no substitute for good judgement. If you do not have good judgement, you should stay with the fitness machines.</p></li>
-            </ul>
-        </article>
-    </main>
+  <main class="row nav-make-room">
+    <article class="col-12 offset-md-2 col-md-8">
+      <h1 class="border-bottom-32kg pt-3 text-center">Kettlebel Safety 101:<br><span class="h2">"It is your fault"</span></h1>
+      <p class="text-center">by Pavel Tstsuline in <a href="https://www.youtube.com/embed/cKx8xE8jJZs"
+          target="_blank">Enter The Kettlebell</a></p>
+      <ul>
+        <li>
+          <p>Before starting training check with the doctor first, an orthopedist and a cardiologist. Kettlebell
+            training can be exceptionally intense.</p>
+        </li>
+        <li>
+          <p>Always be aware of your surroundings. Train on a flat surface on which you can drop the kettlebell without
+            worrying about it. Make sure, your line of fire is clear. If your kettlebell slips out of your hand, in the
+            worst case scenario, it does not hit anybody or breaks something. Always be aware where the sun is. Be
+            aware!</p>
+        </li>
+        <li>
+          <p>Wear flat sole shoes (no sneakers with cushion) or go barefoot. Recommended shoes: converse, chuck taylors,
+            wrestling shoes, etc.</p>
+        </li>
+        <li>
+          <p>Never contest for space with the kettlebell. If the kettlebell wants to fall, get out of the way, do not
+            fight it, let it go. Always remember: quick feet are happy feet!</p>
+        </li>
+        <li>
+          <p>Practice all safety measures at all times, even with very light kettlebell. Always pose the question for
+            yourself: would I be willing to do this with a 48kg kettlebell? If the answer is no, then don’t do that.
+            Mentally stay with the set until you release the kettlebell. At the last rep lower the kettlebell as you
+            plan to do another rep, then set the kettlebell down. Only then you may relax.</p>
+        </li>
+        <li>
+          <p>Keep moving once your heart rate is high. When you've done a really hard set of swings or snaches do not
+            just collapse to the ground, but keep moving! Walk, jug, shadowbox, it is going to make it easier on your
+            heart.</p>
+        </li>
+        <li>
+          <p>Build up the training load gradually using common sense and listen to your body. Do not follow a workout
+            blindly if you are just learning the movement or you are not strong enough yet. While you are at it,
+            practice other exercises to gain strength and endurance. You MUST listen to your body!</p>
+        </li>
+        <li>
+          <p>Instruction can’t cover all contingencies. There is no substitute for good judgement. If you do not have
+            good judgement, you should stay with the fitness machines.</p>
+        </li>
+      </ul>
+    </article>
+  </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
