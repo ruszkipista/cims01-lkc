@@ -213,8 +213,8 @@ footer svg {
     padding-left: 0;
 }
 #img-venue {
-    /* picture from https://www.deltasportsdome.com/wp-content/uploads/2019/12/Delta-Sidebar-Portrait.jpg */
-    background: url(../img/delta-entrance.jpg) center center / cover no-repeat;;
+    /* picture from google street view */
+    background: url(../img/fit100-outside.png) center center / cover no-repeat;;
 }
 
 /* TRYOUT.html */

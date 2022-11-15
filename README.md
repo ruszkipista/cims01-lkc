@@ -351,4 +351,4 @@ See the source of images in the code comments. Here is the short list sources:
 - logos are from their respective organization's website
 - kettlebell images are mainly from www.kettlebellkings.com
 - movement phases images from www.kettlebellsport.eu
-- google map widget of Delta is from their website www.deltasportsdome.com/
+- google map widget of Fit100 is from their website www.fit100hq.com/
